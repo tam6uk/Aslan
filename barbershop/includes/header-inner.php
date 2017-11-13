@@ -1,6 +1,10 @@
 <div class="nav-wrap">
 	<div class="container">
-
+		
+		<div class="logo-inner">
+			<a href="index.php"><img src="#" alt="" width="" height=""></a>
+		</div>
+		
 		<nav class="main-menu">
 			<ul>
 				<li><a href="#">Информация</a></li>
