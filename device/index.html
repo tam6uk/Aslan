@@ -27,9 +27,11 @@
 				</div>
 
 				<div class="userbox-header">
-					<a href="#">Войти</a>
-					<a href="#">Сравнить</a>
-					<a href="#">Корзина</a>
+					<ul>
+						<li><a href="#">войти</a></li>
+						<li><a href="#">сравнить</a></li>
+						<li><a href="#">корзина</a></li>
+					</ul>
 				</div>
 			</div>
 
@@ -310,9 +312,11 @@
 
 				<div class="footer-item">
 					<div class="userbox-footer">
-						<span>войти</span>
-						<span>сравнить</span>
-						<span>корзина</span>
+						<ul>
+							<li><a href="#">войти</a></li>
+							<li><a href="#">сравнить</a></li>
+							<li><a href="#">корзина</a></li>
+						</ul>
 					</div>
 					<span>Тел.: +7 (495) 495-95-95</span>
 					<div class="footer-mini-logo">
@@ -324,11 +328,39 @@
 		</div>	<!-- container -->
 	</div>	<!-- footer-wrap -->
 
+<!-- pop-up -->
+	<div class="popup-message">
+		<button type="button">Закрыть</button>
+		<form action="#" method="get">
+			<div class="form-box">
+				<div class="input-box">
+					<label>
+						Ваше имя:
+						<input type="text" name="uname" placeholder="Представьтесь, пожалуйста" required>
+					</label>
+				</div>
+				<div class="input-box">
+					<label>
+						Ваше e-mail:
+						<input type="text" name="email" placeholder="Для отправки ответа" required>
+					</label>
+				</div>
+			</div>
+			<label>
+				Текст письма:
+				<textarea placeholder="В свободной форме"></textarea>
+			</label>
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
+
 	<!-- JS_BLOCK -->
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.js"></script>
 	<script src="js/fonts.js"></script>
 	<script src="js/common.js"></script>
+
+
 
 </body>
 </html>
