@@ -2,23 +2,22 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 
-	<div class="nav-wrap">
+	<header class="nav-wrap">
 		<div class="container">
 
 			<nav class="main-menu">
 				<ul>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li><a href="shop.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
@@ -28,14 +27,14 @@
 			</div>
 
 		</div>
-	</div>
+	</header>
 
-	<div class="content-wrap">
+	<main class="content-wrap">
 
 		<div class="container">
 
 			<div class="cont-logo">
-				<img src="#" alt="">
+				<img src="img/logo.png" alt="" width="368" height="204">
 			</div>
 
 			<div class="advantage">
@@ -71,26 +70,26 @@
 
 				<div class="infoblock-item">
 					<h3>Новости</h3>
-					<p>
+					<div class="news-item">
 						<a href="#">
 							Нам наконец завезли ягермайстер! теперь Вы можете
 							пропустить стаканчик во время стрижки
 						</a>
 						<time datetime="2017-01-11">11 января</time>
-					</p>
-					<p>
+					</div>
+					<div class="news-item">
 						<a href="#">
 							В нашей команде пополнение, Борис "Бритва", стригунец,
 							обладатель множества титулов и наград пополнил наши стройные ряды
 						</a>
 						<time datetime="2017-01-18">18 января</time>
-					</p>
-					<a href="#">все новости</a>
+					</div>
+					<a class="button-cont" href="#">все новости</a>
 				</div>
 
 				<div class="infoblock-item">
 					<h3>Фотогалерея</h3>
-					<img src="#" alt="">
+					<img src="img/img.jpg" alt="" width="286" height="164">
 
 					<div class="gallery-buttons">
 						<button class="button-cont" type="button">назад</button>
@@ -106,6 +105,7 @@
 					<p>
 						БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 						АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+						<!-- используй ttu -->
 						<a href="tel:+74956660266">телефон: +7 (495) 666-02-66</a>
 					</p>
 					<p>
@@ -127,6 +127,7 @@
 
 					<form method="get" action="#">
 						<span>Дата</span>
+						<!-- используй label -->
 						<input type="text" name="date" placeholder="08.10.2017" required>
 
 						<span>Время</span>
@@ -146,18 +147,15 @@
 
 		</div><!-- container -->
 
-	</div><!-- content-wrap -->
+	</main><!-- content-wrap -->
 
-
-
-
-	<div class="footer">
+	<footer class="footer">
 		<div class="container">
 
 			<div class="footer-box">
-				<span>барбершоп "бородинский"</span><br>
-				<span>адрес: г. Санкт-Петербург, б.Конюшенная, д. 19/8</span><br>
-				<span><a href="#">Как нас найти?</a></span><br>
+				<p>барбершоп "бородинский"</p>
+				<p>адрес: г. Санкт-Петербург, б.Конюшенная, д. 19/8</p>
+				<p><a href="#">Как нас найти?</a></p>
 				<a href="tel:+74956660266">телефон: +7 (495) 666-02-66</a>
 			</div>
 
@@ -174,10 +172,10 @@
 			</div>
 
 		</div>
-	</div>
+	</footer>
 
 	<!-- JS_BLOCK -->
-	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.js"></script>
 	<script src="js/fonts.js"></script>
 	<script src="js/common.js"></script>
