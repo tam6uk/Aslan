@@ -4,8 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<title>Каталог</title>
-	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css" />
+	<title>Моноподы для селфи</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +16,7 @@
 			<div class="header">
 
 				<div class="logo">
-					<img src="img/logo.png" width="164" height="36" alt="">
+					<img src="img/logo.png" width="164" height="36" alt="Device">
 				</div>
 
 				<div class="header-info">
@@ -51,7 +50,7 @@
 								<a href="#">Виртуальная реальность</a>
 							</li>
 							<li class="submenu-item">
-								<a href="#">Моноподы для селфи</a>
+								<a class="active">Моноподы для селфи</a>
 							</li>
 							<li class="submenu-item">
 								<a href="#">Экшн-камеры</a>
@@ -122,17 +121,17 @@
 						<span>Сортировка:</span>
 						<ul>
 							<li>
-								<a class="active-filter">По цене</a>
+								<a class="active">По цене</a>
 							</li>
 							<li>
-								<a>По типу</a>
+								<a href="#">По типу</a>
 							</li>
 							<li>
-								<a>По популярности</a>
+								<a href="#">По популярности</a>
 							</li>
 						</ul>
 						<div class="sort-btn">
-							<a class="active-sort" href="#">вверх</a>
+							<a class="active" href="#">вверх</a>
 							<a href="#">вниз</a>
 						</div>
 					</div>
@@ -158,31 +157,31 @@
 						</div>
 
 						<div class="side-bar-item">
-							<label>
-								<input class="checkbox-btn" type="checkbox" name="checkbox-color"> Черный
-							</label>
-							<label>
-								<input class="checkbox-btn" type="checkbox" name="checkbox-color"> Белый
-							</label>
-							<label>
-								<input class="checkbox-btn" type="checkbox" name="checkbox-color"> Синий
-							</label>
-							<label>
-								<input class="checkbox-btn" type="checkbox" name="checkbox-color"> Красный
-							</label>
-							<label>
-								<input class="checkbox-btn" type="checkbox" name="checkbox-color"> Розовый
-							</label>
+							<label for="color-bl">Черный</label>
+							<input class="checkbox-btn" id="color-bl" type="checkbox" name="checkbox-color-1">
+
+							<label for="color-wh">Белый</label>
+							<input class="checkbox-btn" id="coloer-wh" type="checkbox" name="checkbox-color-2">
+
+							<label for="color-blue">Синий</label>
+							<input class="checkbox-btn" id="color-blue" type="checkbox" name="checkbox-color-3">
+
+							<label for="color-red">Красный</label>
+							<input class="checkbox-btn" id="color-red" type="checkbox" name="checkbox-color-4">
+
+							<label for="color-r">Розовый</label>
+							<input class="checkbox-btn" id="color-r" type="checkbox" name="checkbox-color-5">
 						</div>
+
 						<div class="side-bar-item">
-							<label>
-								<input class="radio-btn" type="radio" name="radio-side"> Красный
-							</label>
-							<label>
-								<input class="radio-btn" type="radio" name="radio-side"> Розовый
-							</label>
+							<label for="radio-side-1">Есть</label>
+							<input class="radio-btn" id="radio-side-1" type="radio" name="radio-side">
+
+							<label for="radio-side-2">Нету</label>
+							<input class="radio-btn" id="radio-side-2" type="radio" name="radio-side">
+
 						</div>
-						<a class="btn" href="#">показать</a>
+						<button class="btn" type="submit">показать</button>
 					</form>
 				</div>
 				<!-- end-sidebar -->
@@ -199,7 +198,7 @@
 
 								<div class="product-img">
 									<a href="#">
-										<img src="img/product-1.jpg" width="360" height="380" alt="">
+										<img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 									</a>
 								</div>
 							</div>
@@ -220,7 +219,7 @@
 
 								<div class="product-img">
 									<a href="#">
-										<img src="img/product-3.jpg" width="360" height="380" alt="">
+										<img src="img/product-3.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 									</a>
 								</div>
 							</div>
@@ -241,7 +240,7 @@
 
 								<div class="product-img">
 									<a href="#">
-										<img src="img/product-4.jpg" width="360" height="380" alt="">
+										<img src="img/product-4.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 									</a>
 								</div>
 							</div>
@@ -262,7 +261,7 @@
 
 								<div class="product-img">
 									<a href="#">
-										<img src="img/product-5.jpg" width="360" height="380" alt="">
+										<img src="img/product-5.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
 									</a>
 								</div>
 							</div>
@@ -281,7 +280,7 @@
 								<a href="#">назад</a>
 							</li>
 							<li>
-								<a href="#">1</a>
+								<a class="active" href="#">1</a>
 							</li>
 							<li>
 								<a href="#">2</a>
@@ -303,13 +302,14 @@
 		</div>
 		<!-- end-catalog-main -->
 	</main>
+
 	<footer class="footer-wrap">
 		<div class="container">
 			<div class="footer-box">
 
 				<div class="footer-item">
 					<div class="logo-footer">
-						<img src="img/logo-footer.png" width="163" height="36" alt="">
+						<img src="img/logo-footer.png" width="163" height="36" alt="Device">
 					</div>
 					<div class="userbox-footer">
 						<ul>
@@ -357,25 +357,19 @@
 					<div class="footer-social">
 						<ul>
 							<li>
-								<a href="#">
-									<img src="img/facebook.png" width="38" height="39" alt="">
-								</a>
+								<a href="#">facebook</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="img/inst.png" width="38" height="39" alt="">
-								</a>
+								<a href="#">inst</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="img/twitter.png" width="38" height="39" alt="">
-								</a>
+								<a href="#">twitter</a>
 							</li>
 						</ul>
 					</div>
 					<div class="footer-mini-logo">
 						<a href="https://htmlacademy.ru/">
-							<img src="img/logo-academy-2.png" width="27" height="24" alt="">
+							<img src="img/logo-academy-2.png" width="27" height="24" alt="HTML Academy">
 						</a>
 					</div>
 				</div>
@@ -384,14 +378,9 @@
 		</div>
 		<!-- container -->
 	</footer>
-
-
-
+	<!-- footer-wrap -->
 
 	<!-- JS_BLOCK -->
-	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
-	<script src="libs/owl.carousel/owl.carousel.js"></script>
-	<script src="js/fonts.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
