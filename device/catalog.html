@@ -30,27 +30,28 @@
 					<div class="userbox-header">
 						<ul>
 							<li>
-								<a href="#">войти</a>
+								<a class="log-in" href="#">войти</a>
 							</li>
 							<li>
-								<a href="#">сравнить</a>
+								<a class="compare" href="#">сравнить</a>
 							</li>
 							<li>
-								<a href="#">корзина</a>
+								<a class="basket" href="#">корзина</a>
 							</li>
 						</ul>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 
 				<div class="header-catalog">
-					<a class="submenu-link" href="#">Каталог товаров</a>
+					<a class="submenu-link" href="catalog.html">Каталог товаров</a>
 					<div class="submenu-box">
 						<ul class="submenu-list">
 							<li class="submenu-item">
 								<a href="#">Виртуальная реальность</a>
 							</li>
 							<li class="submenu-item">
-								<a class="active">Моноподы для селфи</a>
+								<a href="catalog.html">Моноподы для селфи</a>
 							</li>
 							<li class="submenu-item">
 								<a href="#">Экшн-камеры</a>
@@ -69,10 +70,11 @@
 								<a href="#">Квадрокоптеры</a>
 							</li>
 						</ul>
+						<div class="clearfix"></div>
 					</div>
 				</div>
 
-				<nav class="nav">
+				<nav class="main-menu">
 					<ul>
 						<li class="nav-item">
 							<a href="#">Доставка</a>
@@ -85,6 +87,7 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="clearfix"></div>
 
 			</div>
 			<!-- header -->
@@ -108,6 +111,7 @@
 				</li>
 			</ul>
 		</div>
+		<div class="clearfix"></div>
 	</div>
 	<main>
 		<!-- catalog-top -->
@@ -118,7 +122,7 @@
 						<span>Фильтр:</span>
 					</div>
 					<div class="sorting">
-						<span>Сортировка:</span>
+						<p>Сортировка:</p>
 						<ul>
 							<li>
 								<a class="active">По цене</a>
@@ -134,7 +138,9 @@
 							<a class="active" href="#">вверх</a>
 							<a href="#">вниз</a>
 						</div>
+						<div class="clearfix"></div>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
@@ -157,29 +163,36 @@
 						</div>
 
 						<div class="side-bar-item">
-							<label for="color-bl">Черный</label>
+							
 							<input class="checkbox-btn" id="color-bl" type="checkbox" name="checkbox-color-1">
+							<label for="color-bl">Черный</label>
+							<br>
 
-							<label for="color-wh">Белый</label>
+							
 							<input class="checkbox-btn" id="coloer-wh" type="checkbox" name="checkbox-color-2">
+							<label for="color-wh">Белый</label>
+							<br>
 
-							<label for="color-blue">Синий</label>
+						
 							<input class="checkbox-btn" id="color-blue" type="checkbox" name="checkbox-color-3">
+							<label for="color-blue">Синий</label>
+							<br>
 
-							<label for="color-red">Красный</label>
 							<input class="checkbox-btn" id="color-red" type="checkbox" name="checkbox-color-4">
+							<label for="color-red">Красный</label>
+							<br>
 
-							<label for="color-r">Розовый</label>
 							<input class="checkbox-btn" id="color-r" type="checkbox" name="checkbox-color-5">
+							<label for="color-r">Розовый</label>
 						</div>
 
 						<div class="side-bar-item">
-							<label for="radio-side-1">Есть</label>
+							
 							<input class="radio-btn" id="radio-side-1" type="radio" name="radio-side">
-
-							<label for="radio-side-2">Нету</label>
+							<label for="radio-side-1">Есть</label><br>
+							
 							<input class="radio-btn" id="radio-side-2" type="radio" name="radio-side">
-
+							<label for="radio-side-2">Нету</label>
 						</div>
 						<button class="btn" type="submit">показать</button>
 					</form>
@@ -190,7 +203,7 @@
 				<div class="products">
 					<div class="product-box">
 						<div class="product-item">
-							<div class="product-box">
+							<div class="product-box-inner">
 								<div class="product-hover">
 									<a class="btn " href="#">В корзину</a>
 									<a href="#">Добавить к сравнению</a>
@@ -211,7 +224,7 @@
 						<!-- product-item -->
 
 						<div class="product-item">
-							<div class="product-box">
+							<div class="product-box-inner">
 								<div class="product-hover">
 									<a class="btn " href="#">В корзину</a>
 									<a href="#">Добавить к сравнению</a>
@@ -232,7 +245,7 @@
 						<!-- product-item -->
 
 						<div class="product-item">
-							<div class="product-box">
+							<div class="product-box-inner">
 								<div class="product-hover">
 									<a class="btn " href="#">В корзину</a>
 									<a href="#">Добавить к сравнению</a>
@@ -253,7 +266,7 @@
 						<!-- product-item -->
 
 						<div class="product-item">
-							<div class="product-box">
+							<div class="product-box-inner">
 								<div class="product-hover">
 									<a class="btn " href="#">В корзину</a>
 									<a href="#">Добавить к сравнению</a>
@@ -295,6 +308,7 @@
 					</div>
 					<!-- pagination -->
 				</div>
+				<div class="clearfix"></div>
 				<!-- product -->
 
 			</div>
@@ -308,10 +322,10 @@
 			<div class="footer-box">
 
 				<div class="footer-item">
-					<div class="logo-footer">
+					<div class="footer-inner-left logo-footer">
 						<img src="img/logo-footer.png" width="163" height="36" alt="Device">
 					</div>
-					<div class="userbox-footer">
+					<div class="footer-inner-right userbox-footer">
 						<ul>
 							<li>
 								<a href="#">войти</a>
@@ -324,15 +338,16 @@
 							</li>
 						</ul>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 
 				<div class="footer-item">
 
-					<div class="adress">
+					<div class=".footer-inner-left adress">
 						<span>г. Москва, ул. Строителей, 15</span>
 					</div>
 
-					<div class="footer-nav">
+					<div class=".footer-inner-left footer-nav">
 						<ul class="footer-info">
 							<li>
 								<a href="#">доставка</a>
@@ -346,15 +361,16 @@
 						</ul>
 					</div>
 
-					<div class="phone-box">
+					<div class="footer-inner-right phone-box">
 						<span>Тел.: +7 (495) 495-95-95</span>
 					</div>
+					<div class="clearfix"></div>
 
 				</div>
 
 				<div class="footer-item">
-					<div class="line-orange"></div>
-					<div class="footer-social">
+					<div class="footer-inner-left line-orange"></div>
+					<div class="footer-inner-left footer-social">
 						<ul>
 							<li>
 								<a href="#">facebook</a>
@@ -367,11 +383,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-mini-logo">
+					<div class="footer-inner-right footer-mini-logo">
 						<a href="https://htmlacademy.ru/">
 							<img src="img/logo-academy-2.png" width="27" height="24" alt="HTML Academy">
 						</a>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 			<!-- footer-box -->
