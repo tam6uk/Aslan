@@ -46,6 +46,7 @@ span{
 html{
     box-sizing: border-box;
 }
+
 div{
 	outline: 1px solid blue;
 }
