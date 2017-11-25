@@ -46,14 +46,10 @@ span{
 html{
     box-sizing: border-box;
 }
-
-
-div{
-	outline: 1px solid blue;
-}
 .container{
 	width: 1160px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 /* header */
@@ -108,10 +104,13 @@ div{
 }
 
 /* popular */
+.popular{
+	margin: 20px 0px 20px;
+}
 .popular-box .popular-item{
 	display: inline-block;
 	font-size: 0;
-	margin-right: 36px;
+	margin-right: 31px;
 } 
 .popular-box .popular-item:last-child{
 	margin-right: 0;
@@ -119,8 +118,10 @@ div{
 .popular-item .popular-txt{
 	font-size: 15px;
 } 
-
 /* service */
+.service{
+	margin: 40px 0px 40px;
+}
 .service-tabs{
 	width: 300px;
 	float: left;
@@ -131,11 +132,14 @@ div{
 }
 
 /* partners */
+.partners{
+	margin: 20px 0px 20px;
+}
 .partners .partners-box{
 	display: inline-block;
 }
 .partners-box{
-	margin-right: 36px;
+	margin-right: 29px;
 }
 .partners-box:last-child{
 	margin-right: 0;
@@ -160,6 +164,12 @@ div{
 /* footer */
 .footer-inner-left{
 	float: left;
+}
+.footer-nav{
+	width: 200px;
+}
+.adress{
+	width: 200px;
 }
 .footer-inner-right{
 	float: right;
