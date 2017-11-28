@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1,h2,h4,h5,h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul {
+  list-style: none; 
+}
+blockquote, q {
+  quotes: none; 
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+span{
+    display:inline-block;
+}
+.clearfix{
+    clear:both;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+div{
+	outline: 1px solid blue;
+}
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
+
+/* header */
+.header-info .search{
+	float: left;
+	width: 535px;
+}
+.header-info .suserbox-header{
+	float: right;
+	width: 535px;
+}
+.userbox-header li{
+	display: inline-block;
+}
+.userbox-header li:first-child{
+	margin-right: 350px;
+}
+.header-catalog{
+	float: left;
+}
+.main-menu{
+	float: right;
+}
+.main-menu li{
+	display: inline-block;
+}
+.submenu-box .submenu-list{
+	float: left;
+	margin-right: 50px;
+}
+
+/* slider */
+.slider{
+	position: relative;
+}
+.slider-dots{
+	position: absolute;
+	right: 0;
+	outline: 2px solid red;
+}
+.slider-control{
+	display: none;
+}
+.slides .slide-img{
+	float: left;
+}
+.slides .slide-content{
+	float: right;
+}
+.slide-inner{
+	width: 550px;		
+}
+
+/* popular */
+.popular-box .popular-item{
+	display: inline-block;
+	font-size: 0;
+	margin-right: 36px;
+} 
+.popular-box .popular-item:last-child{
+	margin-right: 0;
+} 
+.popular-item .popular-txt{
+	font-size: 15px;
+} 
+
+/* service */
+.service-tabs{
+	width: 300px;
+	float: left;
+}
+.tab-items{
+	width: 700px;
+	float: right;
+}
+
+/* partners */
+.partners .partners-box{
+	display: inline-block;
+}
+.partners-box{
+	margin-right: 36px;
+}
+.partners-box:last-child{
+	margin-right: 0;
+}
+
+/* company */
+.company-item{
+	width: 565px;
+}
+.company .about{
+	float: left;
+}
+.company .contact{
+	float: right;
+}
+.company .map{
+	width: 560px;
+	height: 222px;
+	background: url(../img/map.jpg) no-repeat top center;
+}
+
+/* footer */
+.footer-inner-left{
+	float: left;
+}
+.footer-inner-right{
+	float: right;
+}
+.userbox-footer li, .footer-info li, .footer-social li{
+	display: inline-block;
+}
+.footer-social{
+	width: 426px;
+}
+.line-orange{
+	width: 84px;
+	height: 7px;
+	margin-right: 100px;
+}
+
+/* pop up */
+.popup-message{
+	width: 960px;
+	margin: 0 auto;
+}
+.form-box .input-box{
+	width: 370px;
+}
+.form-box .left{
+	float: left;
+}
+.form-box .right{
+	float: right;
+}
+
+/* catalog */
+
+.breadcrumbs li{
+	display: inline-block;
+}
+.filter .filter-item{
+	width: 270px;
+	float: left;
+}
+.filter .sorting{
+	width: 830px;
+	float: right;
+}
+.sorting li{
+	display: inline-block;
+}
+.sorting p, ul{
+	float: left;
+}
+.sorting .sort-btn{
+	float: right;
+}
+
+/* catalog-main */
+.sidebar{
+	width: 270px;
+	float: left;
+}
+.products{
+	width: calc(100% - 270px);
+	float: right;
+}
+.product-item{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.pagination li{
+	display: inline-block;
+}
