@@ -47,11 +47,9 @@ html{
     box-sizing: border-box;
 }
 .container{
-    width: 940px;
+	width: 960px;
+	padding: 0px 10px;
     margin: 0 auto;
-}
-div{
-	outline: 1px solid blue;
 }
 /* header */
 .main-menu li{
@@ -95,7 +93,12 @@ div{
 .infoblock-right{
 	float: right;
 }
-
+.form-item-left{
+	float: left;
+}
+.form-item-right{
+	float: right;
+}
 /* main item */
 .breadcrumbs{
 	margin: 28px 0px 55px 0px;		

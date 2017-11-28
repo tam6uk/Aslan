@@ -135,17 +135,28 @@
 					</p>
 
 					<form method="get" action="#">
-						<label for "date-check">Дата</label>
-						<input id="date-check" type="text" name="date" placeholder="08.10.2017" required>
+						<div class="form-item-left">
+							<div class="form-item">
+								<label for "date-check">Дата</label><br>
+								<input id="date-check" type="text" name="date" placeholder="08.10.2017" required>
+							</div>
+							<div class="form-item">
+								<label for="time-check">Время</label><br>
+								<input id="time-check" type="text" name="time" placeholder="10:00" required>
+							</div>
+						</div>
 
-						<label for="time-check">Время</label>
-						<input id="time-check" type="text" name="time" placeholder="10:00" required>
-
-						<label for="name-check">Ваше имя</label>
-						<input id="name-check" type="text" name="uname" placeholder="Борода" required>
-
-						<label for="phone-check">Телефон</label>
-						<input id="phone-check" type="tel" name="phone" placeholder="+7 123 456-78-90" required>
+						<div class="form-item-right">
+							<div class="form-item">
+								<label for="name-check">Ваше имя</label><br>
+								<input id="name-check" type="text" name="uname" placeholder="Борода" required>
+							</div>
+							<div class="form-item">
+								<label for="phone-check">Телефон</label><br>
+								<input id="phone-check" type="tel" name="phone" placeholder="+7 123 456-78-90" required>
+							</div>
+						</div>
+						<div class="clearfix"></div>
 
 						<button class="button-cont" type="submit">Отправить</button>
 					</form>
