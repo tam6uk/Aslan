@@ -46,6 +46,14 @@ span{
 html{
     box-sizing: border-box;
 }
+.clearfix:after,
+.clearfix:before {
+ content: " ";
+ display: block;
+}
+.clearfix:after {
+ clear: both;
+}
 
 .container{
 	width: 1180px;
@@ -105,9 +113,11 @@ html{
 }
 
 /* popular */
+.popular-box{
+	font-size:0;
+}
 .popular-box .popular-item{
 	display: inline-block;
-	font-size: 0;
 	margin-right: 36px;
 } 
 .popular-box .popular-item:last-child{
@@ -128,6 +138,9 @@ html{
 }
 
 /* partners */
+.partners{
+	font-size: 0;
+}
 .partners .partners-box{
 	display: inline-block;
 }
@@ -161,6 +174,9 @@ html{
 .footer-inner-right{
 	float: right;
 }
+.footer-cont .footer-inner:first-child{
+	margin-right: 70px;
+}
 .userbox-footer li, .footer-info li, .footer-social li{
 	display: inline-block;
 }
@@ -189,9 +205,15 @@ html{
 }
 
 /* catalog */
-
+div{
+	outline: 1px solid red;
+}
+.breadcrumbs ul{
+	font-size: 0;
+}
 .breadcrumbs li{
 	display: inline-block;
+	font-size: 15px;
 }
 .filter .filter-item{
 	width: 270px;
@@ -201,10 +223,14 @@ html{
 	width: 830px;
 	float: right;
 }
+.sorting ul{
+	font-size: 0;
+}
 .sorting li{
 	display: inline-block;
+	font-size: 15px;
 }
-.sorting p, ul{
+.sorting ul{
 	float: left;
 }
 .sorting .sort-btn{
@@ -220,12 +246,24 @@ html{
 	width: calc(100% - 270px);
 	float: right;
 }
+.product-box{
+	font-size: 0;
+}
 .product-item{
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
+.product-item a{
+	font-size: 15px;
+}
 .pagination li{
 	display: inline-block;
+}
+.pagination ul{
+	font-size: 0px;
+}
+.pagination li a{
+	font-size: 15px;
 }
