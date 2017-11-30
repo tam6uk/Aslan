@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Магазин</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="nav-wrap container clearfix">
+		<div class="logo-inner">
+			<a href="index.html">
+				<img src="img/logo-min.png" width="111" height="24" alt="Барбершоп Бородинский">
+			</a>
+		</div>
+		<nav class="main-menu">
+			<ul>
+				<li>
+					<a href="#">Информация</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="price.html">Прайс-лист</a>
+				</li>
+				<li>
+					<a href="shop.html">Магазин</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="log-in">
+			<a href="#">Вход</a>
+		</div>
+	</header>
+
+	<main class="container">
+
+		<h1>Средства для ухода</h1>
+		<div class="breadcrumbs">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<a>Средства для ухода</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="sidebar">
+			<form action="#" method="get">
+
+				<fieldset class="checkbox-block">
+					<legend>Производители:</legend>
+					<div class="checkbox-item">
+						<input id="check-1" class="checkbox-btn" type="checkbox" name="checkbox-side" value="Baxter of California" checked>
+						<label for="check-1">Baxter of California</label>
+					</div>
+					<div class="checkbox-item">
+
+						<input id="check-2" class="checkbox-btn" type="checkbox" name="checkbox-side-1" value="Baxter of California">
+						<label for="check-2">Mr natty</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="check-3" class="checkbox-btn" type="checkbox" name="checkbox-side-2" value="Suavecito">
+						<label for="check-3">Suavecito</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="check-4" class="checkbox-btn" type="checkbox" name="checkbox-side-3" value="Malin-goets">
+						<label for="check-4">Malin-goets</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="check-5" class="checkbox-btn" type="checkbox" name="checkbox-side-4" value="Myrray`s">
+						<label for="check-5">Myrray`s</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="check-5" class="checkbox-btn" type="checkbox" name="checkbox-side-5" value="American Crew">
+						<label for="check-5">American Crew</label>
+					</div>
+				</fieldset>
+
+				<!-- checkbox-block -->
+
+				<fieldset class="radio-block">
+					<legend>Группы товаров:</legend>
+					<div class="checkbox-item">
+						<input id="radio-1" class="radio-btn" type="radio" name="radio-side" value="Бритвенные принадлежности" checked>
+						<label for="radio-1">Бритвенные принадлежности</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="radio-2" class="radio-btn" type="radio" name="radio-side" value="Средства для ухода">
+						<label for="radio-2">Средства для ухода</label>
+					</div>
+					<div class="checkbox-item">
+						<input id="radio-3" class="radio-btn" type="radio" name="radio-side" value="Аксессуары">
+						<label for="radio-3">Аксессуары</label>
+					</div>
+				</fieldset>
+
+				<button class="button-cont" type="submit">показать</button>
+
+			</form>
+			<!-- radio-block -->
+		</div>
+		<!-- sidebar -->
+
+		<div class="catalog">
+			<div class="catalog-box clearfix">
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Набор для путешествий</span>
+							<span class="product-company">"Baxter of California"</span>
+						</div>
+					</a>
+
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+
+				</div>
+
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-2.jpg" width="220" height="165" alt="Нувлажняющий кондиционер">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Нувлажняющий кондиционер</span>
+							<span class="product-company">"Baxter of California"</span>
+						</div>
+					</a>
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+				</div>
+
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-3.jpg" width="220" height="165" alt="Гель для волос">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Гель для волос</span>
+							<span class="product-company">"Suavesito"</span>
+						</div>
+					</a>
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+				</div>
+
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-4.jpg" width="220" height="165" alt="Глина для укладки волос">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Глина для укладки волос</span>
+							<span class="product-company">"American crew"</span>
+						</div>
+					</a>
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+				</div>
+
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-5.jpg" width="220" height="165" alt="Глина для волос">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Глина для волос</span>
+							<span class="product-company">"American crew"</span>
+						</div>
+					</a>
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+				</div>
+
+				<div class="catalog-item">
+					<a href="item.html">
+						<img src="img/product-6.jpg" width="220" height="165" alt="Набор для бритья">
+					</a>
+					<a href="#">
+						<div class="product-title">
+							<span>Набор для бритья</span>
+							<span class="product-company">"Baxter of California"</span>
+						</div>
+					</a>
+					<div class="product-price">
+						<span>2900 &#8381</span>
+						<button class="button-cont" type="button">купить</button>
+					</div>
+				</div>
+
+			</div>
+			<!-- catalog-box -->
+			<div class="pagination">
+				<ul>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a class="active">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+				</ul>
+			</div>
+			<!-- pagination -->
+		</div>
+		<!-- catalog -->
+	</main>
+
+	<footer class="footer clearfix">
+		<div class="container clearfix">
+
+			<div class="footer-item footer-contacts">
+				<p>Барбершоп "бородинский"</p>
+				<p>Адрес: г. Санкт-Петербург, б.Конюшенная, д. 19/8</p>
+				<p>
+					<a href="#">Как нас найти?</a>
+				</p>
+				<a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
+			</div>
+
+			<div class="footer-item footer-social">
+				<span>Давайте дружить!</span>
+				<ul>
+					<li>
+						<a class="button-cont social-btn vk-btn" href="#">vk.com</a>
+					</li>
+					<li>
+						<a class="button-cont social-btn fb-btn" href="#">facebook.com</a>
+					</li>
+					<li>
+						<a class="button-cont social-btn inst-btn" href="#">instagram.com</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-item footer-copyright">
+				<p>Разработано:</p>
+				<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS_BLOCK -->
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
