@@ -97,7 +97,6 @@ html{
 .slider-dots{
 	position: absolute;
 	right: 0;
-	outline: 2px solid red;
 }
 .slider-control{
 	display: none;
@@ -205,9 +204,6 @@ html{
 }
 
 /* catalog */
-div{
-	outline: 1px solid red;
-}
 .breadcrumbs ul{
 	font-size: 0;
 }
@@ -250,6 +246,7 @@ div{
 	font-size: 0;
 }
 .product-item{
+	width:360px;
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 20px;
