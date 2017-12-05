@@ -43,19 +43,35 @@ span{
 html{
     box-sizing: border-box;
 }
-
 .container{
 	width: 1180px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
-
 .flex-cont{
 	display: flex;
 	justify-content: space-between;
 }
 
 /* header */
+.header{
+	background:#F7E296;
+	padding: 50px 60px;
+	margin-top: 40px;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: -15px;
+	left: 60px;
+}
+.search-area{
+	
+}
+.search-button{
+	width: 90px;
+	height: 40px;
+}
 .header-info .search{
 	width: 535px;
 }
@@ -82,6 +98,7 @@ html{
 .slider-dots{
 	position: absolute;
 	right: 0;
+	outline: 2px solid red;
 }
 .slider-control{
 	display: none;
@@ -105,7 +122,6 @@ html{
 
 /* partners */
 .partners{
-
 	margin: 50px 0;
 }
 
@@ -132,15 +148,23 @@ html{
 .line-orange{
 	width: 84px;
 	height: 7px;
+}
 
 /* pop up */
 .popup-message{
 	width: 960px;
 	margin: 0 auto;
+	padding: 98px 100px;
+	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);	
+}
+.popup-message textarea{
+	width: 100%;
+	resize:none;
+	min-height: 155px; 
+}
 .form-box .input-box{
 	width: 370px;
 }
-
 .input-box input[type=text]{
 	width: 100%;
 }
@@ -163,7 +187,6 @@ html{
 	font-size: 15px;
 }
 .filter .filter-item{
-
 	width: 280px;
 }
 .filter .sorting{
@@ -187,7 +210,6 @@ html{
 /* catalog-main */
 .sidebar{
 	width: 270px;
-
 }
 .products{
 	width: calc(100% - 270px);
