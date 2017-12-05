@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,13 +14,13 @@
 
 	<!-- header -->
 	<header class="container">
-		<div class="header clearfix">
+		<div class="header">
 
 			<div class="logo">
 				<img src="img/logo.png" width="164" height="36" alt="Device">
 			</div>
 
-			<div class="header-info clearfix">
+			<div class="header-info flex-cont">
 				<div class="search">
 					<form action="#" method="get">
 						<input class="search" type="search" placeholder="Поиск по сайту">
@@ -40,58 +42,59 @@
 					</ul>
 				</div>
 			</div>
-
-			<div class="header-catalog">
-				<a class="submenu-link" href="catalog.html">Каталог товаров</a>
-				<div class="submenu-box clearfix">
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Виртуальная реальность</a>
-						</li>
-						<li class="submenu-item">
-							<a href="catalog.html">Моноподы для селфи</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Экшн-камеры</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Фитнесс-браслеты</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Умные часы</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Квадрокоптеры</a>
-						</li>
-					</ul>
+			<div class="flex-cont">
+				<div class="header-catalog">
+					<a class="submenu-link" href="catalog.html">1Каталог товаров</a>
+					<div class="submenu-box flex-cont">
+						<ul class="submenu-list">
+							<li class="submenu-item">
+								<a href="#">Виртуальная реальность</a>
+							</li>
+							<li class="submenu-item">
+								<a href="catalog.html">Моноподы для селфи</a>
+							</li>
+							<li class="submenu-item">
+								<a href="#">Экшн-камеры</a>
+							</li>
+						</ul>
+						<ul class="submenu-list">
+							<li class="submenu-item">
+								<a href="#">Фитнесс-браслеты</a>
+							</li>
+							<li class="submenu-item">
+								<a href="#">Умные часы</a>
+							</li>
+						</ul>
+						<ul class="submenu-list">
+							<li class="submenu-item">
+								<a href="#">Квадрокоптеры</a>
+							</li>
+						</ul>
+					</div>
 				</div>
+
+				<nav class="main-menu">
+					<ul>
+						<li class="nav-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Гарантия</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-
-			<nav class="main-menu">
-				<ul>
-					<li class="nav-item">
-						<a href="#">Доставка</a>
-					</li>
-					<li class="nav-item">
-						<a href="#">Гарантия</a>
-					</li>
-					<li class="nav-item">
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-
+			<!-- flex cont -->
 		</div>
 		<!-- header -->
 	</header>
 	<!-- end header -->
 	<main>
-		<!-- slider -->
 		<div class="container">
+			<!-- slider -->
 			<div class="slider">
 
 				<input class="slider-control" type="radio" id="btn-slider-1" name="switch" checked>
@@ -106,7 +109,7 @@
 
 				<!-- slides -->
 				<div class="slide-items">
-					<div class="slides slide-1 clearfix">
+					<div class="slides slide-1 flex-cont">
 						<div class="slide-inner slide-img">
 							<img src="img/img-1.png" width="384" height="486" alt="Палка для селфи">
 						</div>
@@ -176,14 +179,11 @@
 				</div>
 			</div>
 			<!-- slider -->
-		</div>
-		<!-- container -->
-		<!-- end-slider -->
+			<!-- end-slider -->
 
-		<!-- popular -->
-		<div class="container">
+			<!-- popular -->
 			<div class="popular">
-				<ul class="popular-box">
+				<ul class="popular-box flex-cont">
 					<li class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
@@ -233,15 +233,14 @@
 						</a>
 					</li>
 				</ul>
-
 			</div>
 			<!-- popular -->
+			<!-- end-popular -->
 		</div>
-		<!-- container -->
-		<!-- end-popular -->
-
+		
 		<!-- service -->
-		<div class="service-wrap container clearfix">
+		<div class="service-wrap">
+			<div class="service container flex-cont">
 
 				<div class="service-tabs">
 					<ul>
@@ -276,14 +275,14 @@
 							для нашего банка, разумеется.</p>
 					</div>
 				</div>
+			</div>
 			<!-- service -->
 		</div>
 		<!-- service-wrap -->
-		<!-- end-service -->
 
-		<!-- partners -->
 		<div class="container">
-			<div class="partners">
+			<!-- partners -->
+			<div class="partners flex-cont">
 				<div class="partners-box">
 					<a href="#">
 						<img src="img/part-1-2.png" width="260" height="100" alt="Логотип партнеров-1">
@@ -305,12 +304,10 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<!-- end-partners -->
+			<!-- end-partners -->
 
-		<!-- company -->
-		<div class="container">
-			<div class="company clearfix">
+			<!-- company -->
+			<div class="company flex-cont">
 				<div class="company-item about">
 					<h3>О нас</h3>
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -341,9 +338,9 @@
 
 
 	<footer class="footer-wrap">
-		<div class="container footer-cont clearfix">
+		<div class="container footer-cont flex-cont">
 
-			<div class="footer-inner footer-inner-left">
+			<div class="footer-inner">
 				<div class="logo-footer">
 					<img src="img/logo-footer.png" width="163" height="36" alt="Device">
 				</div>
@@ -353,7 +350,7 @@
 				<div class="line-orange"></div>
 			</div>
 
-			<div class="footer-inner footer-inner-left">
+			<div class="footer-inner">
 				<ul class="footer-info">
 					<li>
 						<a href="#">доставка</a>
@@ -379,7 +376,7 @@
 				</ul>
 			</div>
 
-			<div class="footer-inner footer-inner-right">
+			<div class="footer-inner">
 				<ul class="userbox-footer">
 					<li>
 						<a href="#">войти</a>
@@ -405,16 +402,15 @@
 	<div class="popup-message">
 		<button type="button">Закрыть</button>
 		<form action="#" method="get">
-			<div class="form-box">
-				<div class="input-box left">
+			<div class="form-box flex-cont">
+				<div class="input-box">
 					<label for="name-area">Ваше имя:</label>
 					<input type="text" id="name-area" name="uname" placeholder="Представьтесь, пожалуйста" required>
 				</div>
-				<div class="input-box right">
+				<div class="input-box">
 					<label for="email-area">Ваше e-mail:</label>
 					<input type="text" id="email-area" name="email" placeholder="Для отправки ответа" required>
 				</div>
-				<div class="clearfix"></div>
 			</div>
 			<label for="text-area">Текст письма:</label>
 			<textarea id="text-area" placeholder="В свободной форме"></textarea>

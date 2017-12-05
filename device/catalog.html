@@ -11,40 +11,39 @@
 <body>
 
 	<!-- header -->
-	<header>
-		<div class="container">
-			<div class="header clearfix">
+	<header class="container">
+		<div class="header clearfix">
 
-				<div class="logo">
-					<img src="img/logo.png" width="164" height="36" alt="Device">
+			<div class="logo">
+				<img src="img/logo.png" width="164" height="36" alt="Device">
+			</div>
+
+			<div class="header-info flex-cont">
+				<div class="search">
+					<form action="#" method="get">
+						<input class="search" type="search" placeholder="Поиск по сайту">
+						<button class="search-button" type="submit">Найти</button>
+					</form>
 				</div>
 
-				<div class="header-info clearfix">
-					<div class="search">
-						<form action="#" method="get">
-							<input class="search" type="search" placeholder="Поиск по сайту">
-							<button class="search-button" type="submit">Найти</button>
-						</form>
-					</div>
-
-					<div class="userbox-header">
-						<ul>
-							<li>
-								<a class="log-in" href="#">войти</a>
-							</li>
-							<li>
-								<a class="compare" href="#">сравнить</a>
-							</li>
-							<li>
-								<a class="basket" href="#">корзина</a>
-							</li>
-						</ul>
-					</div>
+				<div class="userbox-header">
+					<ul>
+						<li>
+							<a class="log-in" href="#">войти</a>
+						</li>
+						<li>
+							<a class="compare" href="#">сравнить</a>
+						</li>
+						<li>
+							<a class="basket" href="#">корзина</a>
+						</li>
+					</ul>
 				</div>
-
+			</div>
+			<div class="flex-cont">
 				<div class="header-catalog">
-					<a class="submenu-link" href="catalog.html">Каталог товаров</a>
-					<div class="submenu-box clearfix">
+					<a class="submenu-link" href="catalog.html">1Каталог товаров</a>
+					<div class="submenu-box flex-cont">
 						<ul class="submenu-list">
 							<li class="submenu-item">
 								<a href="#">Виртуальная реальность</a>
@@ -85,17 +84,15 @@
 						</li>
 					</ul>
 				</nav>
-
 			</div>
-			<!-- header -->
+			<!-- flex cont -->
 		</div>
-		<!-- container -->
+		<!-- header -->
 	</header>
 	<!-- end header -->
-
 	<main>
 		<!-- catalog-top -->
-		<div class="catalog-top container">
+		<div class="container">
 			<h1>Моноподы для селфи</h1>
 			<div class="breadcrumbs">
 				<ul>
@@ -110,28 +107,32 @@
 					</li>
 				</ul>
 			</div>
-			<div class="filter clearfix">
-				<div class="filter-item">
-					<span>Фильтр:</span>
-				</div>
-				<div class="sorting">
-					<ul>
-						<li>
-							Сортировка:
-						</li>
-						<li>
-							<a class="active">По цене</a>
-						</li>
-						<li>
-							<a href="#">По типу</a>
-						</li>
-						<li>
-							<a href="#">По популярности</a>
-						</li>
-					</ul>
-					<div class="sort-btn">
-						<a class="active" href="#">вверх</a>
-						<a href="#">вниз</a>
+		</div>
+		<div class="filter-wrap">
+			<div class="container no-padding">
+				<div class="filter flex-cont">
+					<div class="filter-item">
+						<span>Фильтр:</span>
+					</div>
+					<div class="sorting flex-cont">
+						<ul>
+							<li>
+								Сортировка:
+							</li>
+							<li>
+								<a class="active">По цене</a>
+							</li>
+							<li>
+								<a href="#">По типу</a>
+							</li>
+							<li>
+								<a href="#">По популярности</a>
+							</li>
+						</ul>
+						<div class="sort-btn">
+							<a class="active" href="#">вверх</a>
+							<a href="#">вниз</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -140,7 +141,7 @@
 
 		<!-- catalog-main -->
 		<div class="catalog-main">
-			<div class="container clearfix">
+			<div class="container flex-cont">
 				<div class="sidebar">
 					<form action="#" method="get">
 						<div class="sidebar-title">
@@ -198,7 +199,7 @@
 
 				<!-- products -->
 				<div class="products">
-					<div class="product-box">
+					<div class="product-box flex-cont">
 						<div class="product-item">
 							<div class="product-box-inner">
 								<div class="product-hover">
@@ -313,9 +314,9 @@
 	</main>
 
 	<footer class="footer-wrap">
-		<div class="container footer-cont clearfix">
+		<div class="container footer-cont flex-cont">
 
-			<div class="footer-inner footer-inner-left">
+			<div class="footer-inner">
 				<div class="logo-footer">
 					<img src="img/logo-footer.png" width="163" height="36" alt="Device">
 				</div>
@@ -325,7 +326,7 @@
 				<div class="line-orange"></div>
 			</div>
 
-			<div class="footer-inner footer-inner-left">
+			<div class="footer-inner">
 				<ul class="footer-info">
 					<li>
 						<a href="#">доставка</a>
@@ -351,7 +352,7 @@
 				</ul>
 			</div>
 
-			<div class="footer-inner footer-inner-right">
+			<div class="footer-inner">
 				<ul class="userbox-footer">
 					<li>
 						<a href="#">войти</a>
