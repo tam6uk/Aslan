@@ -35,6 +35,7 @@ q:before, q:after {
   content: none; 
 }
 
+
 /* all styles
 ============================= */
 .container{
@@ -52,35 +53,19 @@ body{
 span{
     display:inline-block;
 }
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-html{
-    box-sizing: border-box;
-}
+
 /* ============================== */
 
 /* header */
 .main-menu{
 	min-width: 540px;
-}
-.cont-logo{
-	width: 368px;
-	height: 204px;
-	margin: 0 auto;
-}
 
-/* main index */
-.advantage{
-	width: 910px;
-	margin: 0 auto;
-}
 .advantage-box{
+
 	width: 284px;
 	text-align: center;
 }
 
-/* infoblock */
 .infoblock{
 	padding: 56px 80px;
 }
@@ -102,27 +87,25 @@ html{
 .product{
 	margin-bottom: 50px;
 }
+
 .product-item{
 	width: 468px;
 }
+
 
 /* main price */
 .price-box{
 	width: 460px;
 }
+
 .price-left{
 	width: 400px;
-}
-.price-about{
-	margin-top: 69px;
-}
-.price-about-box{
-	width: 434px;
-}
+
 
 /* main shop */
 .sidebar{
 	width: 234px;
+
 }
 .catalog{
 	width: 700px;
@@ -151,6 +134,7 @@ html{
 .footer{
 	padding: 18px 0px 40px 0px;
 }
+
 .footer-contacts{
 	width: 314px;
 }
