@@ -5,61 +5,68 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Прайс-лист</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext"
+	 rel="stylesheet">
+	<link href='//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="shop-body">
 
-	<header class="nav-wrap container flex-cont">
-		<div class="logo-inner">
-			<a href="index.html">
-				<img src="img/logo-min.png" width="111" height="24" alt="Барбершоп бородинский">
-			</a>
-		</div>
+	<header class="nav-cont no-padding">
+		<div class="container flex-cont">
+			<div class="logo-inner">
+				<a href="index.html">
+					<img src="img/logo-min.png" width="111" height="24" alt="Барбершоп бородинский">
+				</a>
+			</div>
+			<nav class="main-menu">
+				<ul class="nav-list flex-cont">
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
 
-		<nav class="main-menu">
-			<ul class="flex-cont">
-				<li>
-					<a href="#">Информация</a>
-				</li>
-				<li>
-					<a href="#">Новости</a>
-				</li>
-				<li>
-					<a href="price.html">Прайс-лист</a>
-				</li>
-				<li>
-					<a href="shop.html">Магазин</a>
-				</li>
-				<li>
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-
-		<div class="log-in">
-			<a href="#">Вход</a>
+			<div class="log-in">
+				<a href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 
 	<main class="container">
-		<h1>Прайс-лист</h1>
+		<h1 class="page-title">Средства для ухода</h1>
 		<div class="breadcrumbs">
 			<ul>
 				<li>
-					<a href="index.html">Главная</a>
+					<a href="#">Главная</a>
 				</li>
 				<li>
-					<a>Прайс-лист</a>
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<a>Средства для ухода</a>
 				</li>
 			</ul>
 		</div>
 
-		<h1>Истинно мужская классика</h1>
+		<span class="price-title">Истинно мужская классика</span>
 
 		<div class="price-content flex-cont">
 			<div class="price-box price-left">
-				<h2>Мы используем только лучшие средства:</h2>
+				<h3 class="price-item-title">Мы используем только<br> лучшие средства:</h3 class="price-item-title">
 				<ul>
 					<li>Baxter of california</li>
 					<li>mr natty</li>
@@ -70,8 +77,8 @@
 			<!-- price-box -->
 
 			<div class="price-box">
-				<h3>Цены на услуги наших мастеров:</h3>
-				<table>
+				<h3 class="price-item-title">Цены на услуги<br> наших мастеров:</h3>
+				<table cellspacing="0">
 					<tr>
 						<td>Стрижка</td>
 						<td>1500 &#8381</td>
@@ -92,7 +99,7 @@
 
 		<div class="price-about flex-cont">
 			<div class="price-about-box price-left">
-				<h3>Несколько слов о нас:</h3>
+				<h3 class="price-item-title">Несколько слов о нас:</h3>
 				<p>
 					Наша парикмахерская занимается исключительно мужскими стрижками. стрижка клиента для нас - это уникальная и продуманная до
 					мелочей работа. мы не работаем на количество, мы делаем качество.
@@ -124,20 +131,20 @@
 				<span>Давайте дружить!</span>
 				<ul class="flex-cont">
 					<li>
-						<a class="button-cont social-btn vk-btn" href="#">vk.com</a>
+						<a class="button-cont social-btn vk-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn fb-btn" href="#">facebook.com</a>
+						<a class="button-cont social-btn fb-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn inst-btn" href="#">instagram.com</a>
+						<a class="button-cont social-btn inst-btn" href="#"></a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="footer-item footer-copyright">
 				<p>Разработано:</p>
-				<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+				<a class="button-cont footer-btn" href="https://htmlacademy.ru/">Html academy</a>
 			</div>
 		</div>
 	</footer>
