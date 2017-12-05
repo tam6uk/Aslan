@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1,h2,h4,h5,h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul {
+  list-style: none; 
+}
+blockquote, q {
+  quotes: none; 
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+span{
+    display:inline-block;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+.container{
+	width: 1180px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.flex-cont{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* header */
+.header-info .search{
+	width: 535px;
+}
+.header-info .userbox-header{
+	width: 535px;
+}
+.userbox-header li{
+	display: inline-block;
+}
+.userbox-header li:first-child{
+	margin-right: 350px;
+}
+.main-menu li{
+	display: inline-block;
+}
+.submenu-box .submenu-list{
+	margin-right: 50px;
+}
+
+/* slider */
+.slider{
+	position: relative;
+}
+.slider-dots{
+	position: absolute;
+	right: 0;
+	outline: 2px solid red;
+}
+.slider-control{
+	display: none;
+}
+.slide-inner{
+	width: 550px;		
+}
+
+/* popular */
+.popular{
+	margin-bottom: 50px;
+}
+
+/* service */
+.service-tabs{
+	width: 300px;
+}
+.tab-items{
+	width: 700px;
+}
+
+/* partners */
+.partners{
+	margin: 50px 0;
+}
+
+/* company */
+.company{
+	margin: 50px 0px;
+}
+.company-item{
+	width: 565px;
+}
+.company .map{
+	width: 560px;
+	height: 222px;
+	background: url(../img/map.jpg) no-repeat top center;
+}
+
+/* footer */
+.userbox-footer li, .footer-info li, .footer-social li{
+	display: inline-block;
+}
+.footer-social{
+	width: 426px;
+}
+.line-orange{
+	width: 84px;
+	height: 7px;
+}
+
+/* pop up */
+.popup-message{
+	width: 960px;
+	margin: 0 auto;
+	padding: 98px 100px;
+	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);	
+}
+.popup-message textarea{
+	width: 100%;
+	resize:none;
+	min-height: 155px; 
+}
+.form-box .input-box{
+	width: 370px;
+}
+.input-box input[type=text]{
+	width: 100%;
+}
+
+/* catalog */
+.filter{
+	height: 50px;
+}
+.filter div{
+	height: inherit;
+}
+.filter-item{
+	background: #DBDBDB;
+}
+.breadcrumbs ul{
+	font-size: 0;
+}
+.breadcrumbs li{
+	display: inline-block;
+	font-size: 15px;
+}
+.filter .filter-item{
+	width: 280px;
+}
+.filter .sorting{
+	width: 900px;
+	background: #EBEBEB;
+}
+.filter-wrap{
+	background: -webkit-linear-gradient(left,#dbdbdb 50%,#ebebeb 50%);
+}
+.no-padding{
+	padding: 0;
+}
+.sorting ul{
+	font-size: 0;
+}
+.sorting li{
+	display: inline-block;
+	font-size: 15px;
+}
+
+/* catalog-main */
+.sidebar{
+	width: 270px;
+}
+.products{
+	width: calc(100% - 270px);
+	padding-left: 70px;
+}
+.product-box{
+	flex-wrap: wrap;
+}
+.product-item{
+	width: 360px;
+	margin-bottom: 20px;
+}
+.pagination li{
+	display: inline-block;
+}
+.pagination ul{
+	font-size: 0px;
+}
+.pagination li a{
+	font-size: 15px;
+}
