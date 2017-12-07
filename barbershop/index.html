@@ -5,15 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext"
+	 rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="index-body">
 
-
-	<header class="nav-wrap container flex-cont">
+	<header class="nav-cont container flex-cont no-padding">
 		<nav class="main-menu">
-			<ul class="flex-cont">
+			<ul class="nav-list flex-cont">
 				<li>
 					<a href="#">Информация</a>
 				</li>
@@ -40,9 +41,8 @@
 	<main class="content-wrap container">
 
 		<div class="cont-logo">
-			<img src="img/logo.png" alt="Барбершоп бородинский" width="368" height="204">
+			<img src="img/logo.png" alt="Барбершоп бородинский" width="368" height="160">
 		</div>
-
 
 		<div class="advantage  flex-cont">
 			<div class="advantage-box">
@@ -66,7 +66,6 @@
 		</div>
 		<!-- advantage -->
 
-
 		<!-- infoblock -->
 		<div class="infoblock  flex-cont">
 
@@ -77,26 +76,28 @@
 					<a href="#">
 						Нам наконец завезли ягермайстер! теперь Вы можете пропустить стаканчик во время стрижки
 					</a>
+					<br>
 					<time datetime="2017-01-11">11 января</time>
 				</div>
 				<div class="news-item">
 					<a href="#">
 						В нашей команде пополнение, Борис "Бритва", стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
 					</a>
+					<br>
 					<time datetime="2017-01-18">18 января</time>
 				</div>
-				<a class="button-cont" href="#">все новости</a>
+				<a class="button-cont button-cont-small" href="#">все новости</a>
 
 			</div>
 
-
 			<div class="infoblock-item">
 				<h3>Фотогалерея</h3>
-				<img src="img/img.jpg" alt="Фотогалерея" width="286" height="164">
-
+				<div class="img-box">
+					<img src="img/img.jpg" alt="Фотогалерея" width="286" height="164">
+				</div>
 				<div class="gallery-buttons">
-					<button class="button-cont btn-prev" type="button">назад</button>
-					<button class="button-cont btn-next" type="button">вперед</button>
+					<button class="button-cont btn-prev button-cont-small" type="button">назад</button>
+					<button class="button-cont btn-next button-cont-small" type="button">вперед</button>
 				</div>
 			</div>
 
@@ -110,44 +111,44 @@
 					Барбершоп "Бородинский"
 					<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
 					<br>
-					<a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
+					<a class="call-link" href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
 				</p>
 				<p>
 					Время работы:
 					<br> пн - пт: с 10:00 до 22:00
 					<br> сб - вс: с 10:00 до 19:00
 				</p>
-				<a class="button-cont" href="#">Как проехать</a>
-				<a class="button-cont" href="#">Обратная связь</a>
+				<a class="button-cont button-cont-small" href="#">Как проехать</a>
+				<a class="button-cont button-cont-small" href="#">Обратная связь</a>
 			</div>
 
 			<div class="infoblock-item">
 				<h3>Записаться</h3>
 
-				<p>
+				<p class="form-subtitle">
 					Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони
 				</p>
 
 				<form method="get" action="#">
-					<div class="flex-cont">
-						<div class="form-item-left">
+					<div class="input-box flex-cont">
+						<div class="form-item-box">
 							<div class="form-item">
 								<label for="date-check">Дата</label>
 								<br>
 								<input id="date-check" type="text" name="date" placeholder="08.10.2017" required>
 							</div>
 							<div class="form-item">
-								<label for="time-check">Время</label>
+								<label for="time-check">Ваше имя</label>
 								<br>
-								<input id="time-check" type="text" name="time" placeholder="10:00" required>
+								<input id="time-check" type="text" name="time" placeholder="Борода" required>
 							</div>
 						</div>
 
-						<div class="form-item-right">
+						<div class="form-item-box">
 							<div class="form-item">
-								<label for="name-check">Ваше имя</label>
+								<label for="name-check">Время</label>
 								<br>
-								<input id="name-check" type="text" name="uname" placeholder="Борода" required>
+								<input id="name-check" type="text" name="uname" placeholder="10:00" required>
 							</div>
 							<div class="form-item">
 								<label for="phone-check">Телефон</label>
@@ -157,7 +158,7 @@
 						</div>
 					</div>
 
-					<button class="button-cont" type="submit">Отправить</button>
+					<button class="button-cont button-cont-big" type="submit">Отправить</button>
 				</form>
 
 			</div>
@@ -167,7 +168,7 @@
 	<!-- content-wrap -->
 
 	<footer class="footer">
-		<div class="container flex-cont">
+		<div class="container flex-cont-footer">
 
 			<div class="footer-item footer-contacts">
 				<p>Барбершоп "бородинский"</p>
@@ -182,20 +183,20 @@
 				<span>Давайте дружить!</span>
 				<ul class="flex-cont">
 					<li>
-						<a class="button-cont social-btn vk-btn" href="#">vk.com</a>
+						<a class="button-cont social-btn vk-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn fb-btn" href="#">facebook.com</a>
+						<a class="button-cont social-btn fb-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn inst-btn" href="#">instagram.com</a>
+						<a class="button-cont social-btn inst-btn" href="#"></a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="footer-item footer-copyright">
 				<p>Разработано:</p>
-				<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+				<a class="button-cont footer-btn" href="https://htmlacademy.ru/">Html academy</a>
 			</div>
 		</div>
 	</footer>

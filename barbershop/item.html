@@ -1,49 +1,52 @@
-<!DOCTYPE html>
+.product-item<!DOCTYPE html>
 <html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Набор для путешествий "Baxter of California"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext"
+	rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="shop-body">
 
-	<header class="nav-wrap container flex-cont">
-		<div class="logo-inner">
-			<a href="index.html">
-				<img src="img/logo-min.png" width="111" height="24" alt="Барбершоп бородинский">
-			</a>
-		</div>
+	<header class="nav-cont no-padding">
+		<div class="container flex-cont">
+			<div class="logo-inner">
+				<a href="index.html">
+					<img src="img/logo-min.png" width="111" height="24" alt="Барбершоп бородинский">
+				</a>
+			</div>
+			<nav class="main-menu">
+				<ul class="nav-list flex-cont">
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
 
-		<nav class="main-menu">
-			<ul class="flex-cont">
-				<li>
-					<a href="#">Информация</a>
-				</li>
-				<li>
-					<a href="#">Новости</a>
-				</li>
-				<li>
-					<a href="price.html">Прайс-лист</a>
-				</li>
-				<li>
-					<a href="shop.html">Магазин</a>
-				</li>
-				<li>
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-
-		<div class="log-in">
-			<a href="#">Вход</a>
+			<div class="log-in">
+				<a href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 
 	<main class="container">
-		<h1>Набор для путешествий "Baxter of California"</h1>
+		<h1 class="page-title">Набор для путешествий "Baxter of California"</h1>
 		<div class="breadcrumbs">
 			<ul>
 				<li>
@@ -85,9 +88,9 @@
 
 			<div class="product-item">
 
-				<div class="product-articul">
+				<div class="product-articul flex-cont">
 					<span>есть в наличии</span>
-					<span class="articul-product">Артикул:Dexter-AE</span>
+					<span class="articul-product">Артикул: Dexter-AE</span>
 				</div>
 
 				<p>
@@ -102,8 +105,8 @@
 				</div>
 
 				<div class="product-element">
-					<h3>В набор входят</h3>
-					<ul>
+					<h3>В набор входят:</h3>
+					<ul class="product-element-list">
 						<li>Средство для умывания (50 мл)</li>
 						<li>Увлажняющий крем (50 мл)</li>
 						<li>Крем для бритья (50 мл)</li>
@@ -135,20 +138,20 @@
 				<span>Давайте дружить!</span>
 				<ul class="flex-cont">
 					<li>
-						<a class="button-cont social-btn vk-btn" href="#">vk.com</a>
+						<a class="button-cont social-btn vk-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn fb-btn" href="#">facebook.com</a>
+						<a class="button-cont social-btn fb-btn" href="#"></a>
 					</li>
 					<li>
-						<a class="button-cont social-btn inst-btn" href="#">instagram.com</a>
+						<a class="button-cont social-btn inst-btn" href="#"></a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="footer-item footer-copyright">
 				<p>Разработано:</p>
-				<a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+				<a class="button-cont footer-btn" href="https://htmlacademy.ru/">Html academy</a>
 			</div>
 		</div>
 	</footer>

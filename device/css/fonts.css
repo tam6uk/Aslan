@@ -10,7 +10,7 @@
   font-style: normal; 
 }
 
-  @font-face {
+@font-face {
     font-family: "Gilroy-Light";
     src: url("../fonts/Gilroy-Light/Gilroy-Light.eot");
     src: local("☺"), url("../fonts/Gilroy-Light/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light/Gilroy-Light.ttf") format("truetype"), url("../fonts/Gilroy-Light/Gilroy-Light.svg") format("svg");

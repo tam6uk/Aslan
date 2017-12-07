@@ -6,90 +6,88 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Главная</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" href="css/fonts.css">	
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 	<!-- header -->
-	<header class="container">
-		<div class="header">
-
-			<div class="logo">
-				<img src="img/logo.png" width="164" height="36" alt="Device">
-			</div>
-
-			<div class="header-info flex-cont">
-				<div class="search">
-					<form action="#" method="get">
-						<input class="search" type="search" placeholder="Поиск по сайту">
-						<button class="search-button" type="submit">Найти</button>
-					</form>
-				</div>
-
-				<div class="userbox-header">
-					<ul>
-						<li>
-							<a class="log-in" href="#">войти</a>
-						</li>
-						<li>
-							<a class="compare" href="#">сравнить</a>
-						</li>
-						<li>
-							<a class="basket" href="#">корзина</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="flex-cont">
-				<div class="header-catalog">
-					<a class="submenu-link" href="catalog.html">1Каталог товаров</a>
-					<div class="submenu-box flex-cont">
-						<ul class="submenu-list">
-							<li class="submenu-item">
-								<a href="#">Виртуальная реальность</a>
-							</li>
-							<li class="submenu-item">
-								<a href="catalog.html">Моноподы для селфи</a>
-							</li>
-							<li class="submenu-item">
-								<a href="#">Экшн-камеры</a>
-							</li>
-						</ul>
-						<ul class="submenu-list">
-							<li class="submenu-item">
-								<a href="#">Фитнесс-браслеты</a>
-							</li>
-							<li class="submenu-item">
-								<a href="#">Умные часы</a>
-							</li>
-						</ul>
-						<ul class="submenu-list">
-							<li class="submenu-item">
-								<a href="#">Квадрокоптеры</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<nav class="main-menu">
-					<ul>
-						<li class="nav-item">
-							<a href="#">Доставка</a>
-						</li>
-						<li class="nav-item">
-							<a href="#">Гарантия</a>
-						</li>
-						<li class="nav-item">
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<!-- flex cont -->
+	<header class="container header">
+		<div class="logo">
+			<img src="img/logo.png" width="164" height="36" alt="Device">
 		</div>
-		<!-- header -->
+
+		<div class="header-info flex-cont">
+			<div class="search">
+				<form action="#" method="get">
+					<label class="search-area">
+						<input type="search" placeholder="Поиск по сайту">
+					</label>
+					<button class="search-button" type="submit">Найти</button>
+				</form>
+			</div>
+
+			<div class="userbox-header">
+				<ul class="userbox-lists">
+					<li>
+						<a class="log-in" href="#">Войти</a>
+					</li>
+					<li>
+						<a class="compare" href="#">Сравнить</a>
+					</li>
+					<li>
+						<a class="basket" href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex-cont">
+			<div class="header-catalog">
+				<a class="submenu-link" href="catalog.html">Каталог товаров</a>
+				<div class="submenu-box flex-cont">
+					<ul class="submenu-list">
+						<li class="submenu-item">
+							<a href="#">Виртуальная реальность</a>
+						</li>
+						<li class="submenu-item">
+							<a href="catalog.html">Моноподы для селфи</a>
+						</li>
+						<li class="submenu-item">
+							<a href="#">Экшн-камеры</a>
+						</li>
+					</ul>
+					<ul class="submenu-list">
+						<li class="submenu-item">
+							<a href="#">Фитнесс-браслеты</a>
+						</li>
+						<li class="submenu-item">
+							<a href="#">Умные часы</a>
+						</li>
+					</ul>
+					<ul class="submenu-list">
+						<li class="submenu-item">
+							<a href="#">Квадрокоптеры</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<nav class="main-menu">
+				<ul>
+					<li class="nav-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="nav-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- flex cont -->
 	</header>
 	<!-- end header -->
 	<main>
@@ -183,61 +181,61 @@
 
 			<!-- popular -->
 			<div class="popular">
-				<ul class="popular-box flex-cont">
-					<li class="popular-item">
+				<div class="popular-box flex-cont">
+					<div class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
 								<img src="img/pop-1.png" width="160" height="160" alt="Виртуальная реальность">
 							</div>
 							<span class="popular-txt">Виртуальная реальность</span>
 						</a>
-					</li>
-					<li class="popular-item">
+					</div>
+					<div class="popular-item">
 						<a class="popular-link" href="catalog.html">
 							<div class="popular-img">
 								<img src="img/pop-2.png" width="160" height="160" alt="Моноподы для селфи">
 							</div>
 							<span class="popular-txt">Моноподы для селфи</span>
 						</a>
-					</li>
-					<li class="popular-item">
+					</div>
+					<div class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
 								<img src="img/pop-3.png" width="160" height="160" alt="Экшн камеры">
 							</div>
 							<span class="popular-txt">Экшн камеры</span>
 						</a>
-					</li>
-					<li class="popular-item">
+					</div>
+					<div class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
 								<img src="img/pop-4.png" width="160" height="160" alt="Фитнес браслеты">
 							</div>
 							<span class="popular-txt">Фитнес браслеты</span>
 						</a>
-					</li>
-					<li class="popular-item">
+					</div>
+					<div class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
 								<img src="img/pop-5.png" width="160" height="160" alt="Умные браслеты">
 							</div>
 							<span class="popular-txt">Умные браслеты</span>
 						</a>
-					</li>
-					<li class="popular-item">
+					</div>
+					<div class="popular-item">
 						<a class="popular-link" href="#">
 							<div class="popular-img">
 								<img src="img/pop-6.png" width="160" height="160" alt="Квадрокоптеры">
 							</div>
 							<span class="popular-txt">Квадрокоптеры</span>
 						</a>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 			<!-- popular -->
 			<!-- end-popular -->
 		</div>
-		
+
 		<!-- service -->
 		<div class="service-wrap">
 			<div class="service container flex-cont">
