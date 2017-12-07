@@ -122,10 +122,6 @@ html{
 	padding-top: 22px;
 }
 .nav-list li{
-	font-size:0;
-	margin-right: 13px;
-}
-.nav-list li{
 	height: 72px;
 }
 .nav-list a, .log-in a{
@@ -249,10 +245,10 @@ h3{
 	top:110px;
 }
 .infoblock .infoblock-item:last-child{
-	padding-left: 83px;
+	width: 304px;
 }
 .infoblock-item{
-	width: 384px;
+	width: 330px;
 }
 .gallery-buttons{
 	margin-top: 40px;
@@ -339,7 +335,7 @@ h3{
 	margin-bottom: 37px;
 }
 .product .product-item:last-child{
-	margin-left: 80px;
+	width: 400px;
 }
 .product-item{
 	width: 468px;
@@ -606,6 +602,9 @@ h3{
 	margin-top: 68px;
 	color:white;
 }
+.flex-cont-footer{
+	display: flex;
+}
 .footer-item{
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -621,10 +620,11 @@ h3{
 }
 .footer-contacts{
 	width: 316px;
+	margin-right: 90px;
 }
 .footer-social{
 	width: 150px;
-	margin-right: 174px;
+	margin-right: auto;
 	text-align: center;
 }
 .footer-copyright{
