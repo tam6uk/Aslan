@@ -44,32 +44,36 @@
 		</div>
 		<div class="flex-cont">
 			<div class="header-catalog">
-				<a class="submenu-link" href="catalog.html">Каталог товаров</a>
-				<div class="submenu-box flex-cont">
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Виртуальная реальность</a>
-						</li>
-						<li class="submenu-item">
-							<a href="catalog.html">Моноподы для селфи</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Экшн-камеры</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Фитнесс-браслеты</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Умные часы</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Квадрокоптеры</a>
-						</li>
-					</ul>
+				<div class="menu-box">
+					<a class="submenu-link" href="catalog.html">Каталог товаров</a>
+					<div class="submenu-box">
+						<div class="submenu-container flex-cont">
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="submenu-item">
+									<a href="catalog.html">Моноподы для селфи</a>
+								</li>
+								<li class="submenu-item">
+									<a href="#">Экшн-камеры</a>
+								</li>
+							</ul>
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Фитнесс-браслеты</a>
+								</li>
+								<li class="submenu-item">
+									<a href="#">Умные часы</a>
+								</li>
+							</ul>
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Квадрокоптеры</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -95,37 +99,42 @@
 			<!-- slider -->
 			<div class="slider">
 
-				<input class="slider-control" type="radio" id="btn-slider-1" name="switch" checked>
-				<input class="slider-control" type="radio" id="btn-slider-2" name="switch">
-				<input class="slider-control" type="radio" id="btn-slider-3" name="switch">
 
-				<div class="slider-dots">
-					<label class="slider-dots-item" for="btn-slider-1"></label>
-					<label class="slider-dots-item" for="btn-slider-2"></label>
-					<label class="slider-dots-item" for="btn-slider-3"></label>
-				</div>
 
 				<!-- slides -->
 				<div class="slide-items">
+					<input class="slider-control" type="radio" id="btn-slider-1" name="switch" checked>
+					<input class="slider-control" type="radio" id="btn-slider-2" name="switch">
+					<input class="slider-control" type="radio" id="btn-slider-3" name="switch">
+					<div class="slider-dots flex-cont">
+						<label class="slider-dots-item dot-1" for="btn-slider-1"></label>
+						<label class="slider-dots-item dot-2" for="btn-slider-2"></label>
+						<label class="slider-dots-item dot-3" for="btn-slider-3"></label>
+					</div>
 					<div class="slides slide-1 flex-cont">
 						<div class="slide-inner slide-img">
 							<img src="img/img-1.png" width="384" height="486" alt="Палка для селфи">
 						</div>
 						<div class="slide-inner slide-content">
-							<h2>Делай селфи, как Бен Стиллер!</h2>
+							<div class="slider-num">01</div>
+							<h2>Делай селфи,
+								<br> как Бен Стиллер!</h2>
 							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-							<a href="#">Подробнее</a>
-							<ul class="options">
+							<a class="btn" href="#">Подробнее</a>
+							<ul class="options flex-cont">
 								<li class="option-item">
 									<span>8,5 м</span>
+									<br>
 									<span>Длина палки</span>
 								</li>
 								<li class="option-item">
 									<span>5 кг</span>
+									<br>
 									<span>Вес палки</span>
 								</li>
 								<li class="option-item">
 									<span>Карбон</span>
+									<br>
 									<span>Материал</span>
 								</li>
 							</ul>
@@ -134,17 +143,20 @@
 					<!-- slide-1 -->
 
 					<!-- slide-2 -->
-					<div class="slides slide-2  clearfix">
+					<div class="slides slide-2 flex-cont">
 						<div class="slide-inner slide-img">
 							<img src="img/img-2.png" width="384" height="486" alt="фитнесс-браслеты">
 						</div>
 						<div class="slide-inner slide-content">
-							<h2>Худеем правильно!</h2>
+							<div class="slider-num">02</div>
+							<h2>Худеем
+								<br> правильно!</h2>
 							<p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-							<a href="#">Подробнее</a>
+							<a class="btn" href="#">Подробнее</a>
 							<ul class="options">
 								<li class="option-item">
 									<span>48 часов</span>
+									<br>
 									<span>Без подзарядки</span>
 								</li>
 							</ul>
@@ -153,21 +165,25 @@
 					<!-- slide-2 -->
 
 					<!-- slide-3 -->
-					<div class="slides slide-3  clearfix">
+					<div class="slides slide-3 flex-cont">
 						<div class="slide-inner slide-img">
 							<img src="img/img-3.png" width="526" height="334" alt="квадрокоптер">
 						</div>
 						<div class="slide-inner slide-content">
-							<h2>Порхает как бабочка, жалит как пчела!</h2>
+							<div class="slider-num">03</div>
+							<h2>Порхает как<br> бабочка,
+								<br> жалит как пчела!</h2>
 							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-							<a href="#">Подробнее</a>
-							<ul class="options">
+							<a class="btn" href="#">Подробнее</a>
+							<ul class="options flex-cont">
 								<li class="option-item">
 									<span>80 м</span>
+									<br>
 									<span>Дальность полета</span>
 								</li>
 								<li class="option-item">
 									<span>50 м</span>
+									<br>
 									<span>Радиус поражения</span>
 								</li>
 							</ul>
@@ -238,38 +254,41 @@
 
 		<!-- service -->
 		<div class="service-wrap">
-			<div class="service container flex-cont">
-
+			<div class="service container">
+				<input type="radio" id="tab-1" name="service-tabs" checked>
+				<input type="radio" id="tab-2" name="service-tabs">
+				<input type="radio" id="tab-3" name="service-tabs">
 				<div class="service-tabs">
 					<ul>
 						<li>
-							<a class="btn active" href="#tab1">Доставка</a>
+							<label for="tab-1" class="btn">Доставка</label>
 						</li>
 						<li>
-							<a class="btn" href="#tab2">Гарантия</a>
+							<label for="tab-2" class="btn">Гарантия</label>
 						</li>
 						<li>
-							<a class="btn" href="#tab3">Кредит</a>
+							<label for="tab-3" class="btn">Кредит</label>
 						</li>
 					</ul>
 				</div>
 
 				<div class="tab-items">
-					<div class="services-box active" id="tab1">
-						<h3 class="service-title">Доставка</h3>
-						<p class="service-txt">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+
+					<div class="services-box tab-1 active">
+						<h2>Доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
 							его на ваш этаж.</p>
 					</div>
 
-					<div class="services-box" id="tab2">
-						<h3 class="service-title">Гарантия</h3>
-						<p class="service-txt">Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый.
+					<div class="services-box tab-2">
+						<h2>Гарантия</h2>
+						<p>Если из-за возгарания купленного у нас товара у вас сгорит дом не переживайте, мы выдадим вам новый.
 							<br> Товар, не дом, конечно же.</p>
 					</div>
 
-					<div class="services-box" id="tab3">
-						<h3 class="service-title">Кредит</h3>
-						<p class="service-txt">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
+					<div class="services-box tab-3">
+						<h2>Кредит</h2>
+						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
 							для нашего банка, разумеется.</p>
 					</div>
 				</div>
@@ -307,10 +326,12 @@
 			<!-- company -->
 			<div class="company flex-cont">
 				<div class="company-item about">
-					<h3>О нас</h3>
-					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-					<ul>
+					<h2>О нас</h2>
+					<p>Огромный выбор гаджетов не оставит равнодушным гика,
+						<br> который есть в каждом из нас.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+						<br> DEVICE работает со многими транспортными компаниями:</p>
+					<ul class="about-list">
 						<li>Деловые Линии</li>
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
@@ -318,8 +339,9 @@
 					<a class="btn" href="#">Подробнее о нас</a>
 				</div>
 				<div class="company-item contact">
-					<h3>Контакты</h3>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<h2>Контакты</h2>
+					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+						<br> проверить работоспособность покупки. Всякое бывает.</p>
 					<div class="map">
 						<a href="#">
 							<iframe></iframe>
@@ -349,7 +371,7 @@
 			</div>
 
 			<div class="footer-inner">
-				<ul class="footer-info">
+				<ul class="footer-info flex-cont">
 					<li>
 						<a href="#">доставка</a>
 					</li>
@@ -361,35 +383,37 @@
 					</li>
 				</ul>
 
-				<ul class="footer-social">
+				<ul class="footer-social flex-cont">
 					<li>
-						<a href="#">facebook</a>
+						<a class="facebook-ico" href="#"></a>
 					</li>
 					<li>
-						<a href="#">inst</a>
+						<a class="inst-ico" href="#"></a>
 					</li>
 					<li>
-						<a href="#">twitter</a>
+						<a class="twitter-ico" href="#"></a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="footer-inner">
-				<ul class="userbox-footer">
+				<ul class="userbox-footer flex-cont">
 					<li>
-						<a href="#">войти</a>
+						<a class="login-footer" href="#">войти</a>
 					</li>
 					<li>
-						<a href="#">сравнить</a>
+						<a class="compare-footer" href="#">сравнить</a>
 					</li>
 					<li>
-						<a href="#">корзина</a>
+						<a class="basket-footer" href="#">корзина</a>
 					</li>
 				</ul>
 				<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-				<a href="https://htmlacademy.ru/">
-					<img src="img/logo-academy-2.png" width="27" height="24" alt="HTML Academy">
-				</a>
+				<p class="footer-link-academy">
+					<a class="html-logo" href="https://htmlacademy.ru/">
+						<!-- <img src="img/logo-academy-2.png" width="24" height="24" alt="HTML Academy"> -->
+					</a>
+				</p>
 			</div>
 
 		</div>
