@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<title>Моноподы для селфи</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 	<!-- header -->
-	<header class="container header">
+	<header class="container header header-catalog">
 		<div class="logo">
 			<img src="img/logo.png" width="164" height="36" alt="Device">
 		</div>
@@ -19,55 +21,59 @@
 		<div class="header-info flex-cont">
 			<div class="search">
 				<form action="#" method="get">
-					<label>
-						<input class="search-area" type="search" placeholder="Поиск по сайту">
+					<label class="search-area">
+						<input type="search" placeholder="Поиск по сайту">
 					</label>
 					<button class="search-button" type="submit">Найти</button>
 				</form>
 			</div>
 
 			<div class="userbox-header">
-				<ul>
+				<ul class="userbox-lists">
 					<li>
-						<a class="log-in" href="#">войти</a>
+						<a class="log-in" href="#">Войти</a>
 					</li>
 					<li>
-						<a class="compare" href="#">сравнить</a>
+						<a class="compare" href="#">Сравнить</a>
 					</li>
 					<li>
-						<a class="basket" href="#">корзина</a>
+						<a class="basket" href="#">Корзина</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="flex-cont">
 			<div class="header-catalog">
-				<a class="submenu-link" href="catalog.html">1Каталог товаров</a>
-				<div class="submenu-box flex-cont">
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Виртуальная реальность</a>
-						</li>
-						<li class="submenu-item">
-							<a href="catalog.html">Моноподы для селфи</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Экшн-камеры</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Фитнесс-браслеты</a>
-						</li>
-						<li class="submenu-item">
-							<a href="#">Умные часы</a>
-						</li>
-					</ul>
-					<ul class="submenu-list">
-						<li class="submenu-item">
-							<a href="#">Квадрокоптеры</a>
-						</li>
-					</ul>
+				<div class="menu-box">
+					<a class="submenu-link" href="catalog.html">Каталог товаров</a>
+					<div class="submenu-box">
+						<div class="submenu-container flex-cont">
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Виртуальная реальность</a>
+								</li>
+								<li class="submenu-item">
+									<a href="catalog.html">Моноподы для селфи</a>
+								</li>
+								<li class="submenu-item">
+									<a href="#">Экшн-камеры</a>
+								</li>
+							</ul>
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Фитнесс-браслеты</a>
+								</li>
+								<li class="submenu-item">
+									<a href="#">Умные часы</a>
+								</li>
+							</ul>
+							<ul class="submenu-list">
+								<li class="submenu-item">
+									<a href="#">Квадрокоптеры</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -90,7 +96,7 @@
 	<!-- end header -->
 	<main>
 		<!-- catalog-top -->
-		<div class="container">
+		<div class="container catalog-padding">
 			<h1>Моноподы для селфи</h1>
 			<div class="breadcrumbs">
 				<ul>
@@ -108,7 +114,7 @@
 		</div>
 		<div class="filter-wrap">
 			<div class="container no-padding">
-				<div class="filter flex-cont">
+				<div class="filter flex-cont catalog-padding">
 					<div class="filter-item">
 						<span>Фильтр:</span>
 					</div>
@@ -117,19 +123,19 @@
 							<li>
 								Сортировка:
 							</li>
-							<li>
+							<li class="sorting-list">
 								<a class="active">По цене</a>
 							</li>
-							<li>
+							<li class="sorting-list">
 								<a href="#">По типу</a>
 							</li>
-							<li>
+							<li class="sorting-list">
 								<a href="#">По популярности</a>
 							</li>
 						</ul>
 						<div class="sort-btn">
-							<a class="active" href="#">вверх</a>
-							<a href="#">вниз</a>
+							<a class="active" href="#"></a>
+							<a href="#"></a>
 						</div>
 					</div>
 				</div>
@@ -145,22 +151,30 @@
 						<div class="sidebar-title">
 							<span>Стоимость</span>
 						</div>
-						<div class="layot-wrap">
-							<div>
-								<span>
-									<input id="Slider1" type="range" name="price" value="1;100" />
-								</span>
+
+						<div class="layot">
+							<div class="layot-inner">
+								<div class="filter-btn filter-left">
+									<span>от 0</span>
+								</div>
+								<div class="filter-btn filter-right">
+									<span>до 5000</span>
+								</div>
 							</div>
 						</div>
 
-						<div class="side-bar-item">
+						<div class="sidebar-title">
+							<span>Цвет</span>
+						</div>
+
+						<div class="sidebar-item-top">
 							<div class="checkbox-item">
 								<input class="checkbox-btn" id="color-bl" type="checkbox" name="checkbox-color-1">
 								<label for="color-bl">Черный</label>
 							</div>
 
 							<div class="checkbox-item">
-								<input class="checkbox-btn" id="coloer-wh" type="checkbox" name="checkbox-color-2">
+								<input class="checkbox-btn" id="color-wh" type="checkbox" name="checkbox-color-2">
 								<label for="color-wh">Белый</label>
 							</div>
 
@@ -180,9 +194,13 @@
 							</div>
 						</div>
 
-						<div class="side-bar-item">
+						<div class="sidebar-title">
+							<span>Bluetooth</span>
+						</div>
+
+						<div class="sidebar-item-bottom">
 							<div class="radio-item">
-								<input class="radio-btn" id="radio-side-1" type="radio" name="radio-side">
+								<input class="radio-btn" id="radio-side-1" type="radio" name="radio-side" checked>
 								<label for="radio-side-1">Есть</label>
 							</div>
 							<div class="radio-item">
@@ -190,7 +208,7 @@
 								<label for="radio-side-2">Нету</label>
 							</div>
 						</div>
-						<button class="btn" type="submit">показать</button>
+						<button class="btn sidebar-btn" type="submit">показать</button>
 					</form>
 				</div>
 				<!-- end-sidebar -->
@@ -212,7 +230,7 @@
 								</div>
 							</div>
 
-							<div class="product-info">
+							<div class="product-info flex-cont">
 								<a href="#">Любительская селфи-палка</a>
 								<span>500 руб.</span>
 							</div>
@@ -233,9 +251,10 @@
 								</div>
 							</div>
 
-							<div class="product-info">
-								<a href="#">Профессиональная селфи-палка</a>
-								<span>500 руб.</span>
+							<div class="product-info flex-cont">
+								<a href="#">Профессиональная
+									<br> селфи-палка</a>
+								<span>1500 руб.</span>
 							</div>
 						</div>
 						<!-- product-item -->
@@ -254,9 +273,9 @@
 								</div>
 							</div>
 
-							<div class="product-info">
+							<div class="product-info flex-cont">
 								<a href="#">Непотопляемая селфи-палка</a>
-								<span>500 руб.</span>
+								<span>2500 руб.</span>
 							</div>
 						</div>
 						<!-- product-item -->
@@ -275,21 +294,22 @@
 								</div>
 							</div>
 
-							<div class="product-info">
-								<a href="#">Селфи-палка "Следуй за мной"</a>
-								<span>500 руб.</span>
+							<div class="product-info flex-cont">
+								<a href="#">Селфи-палка "Следуй за
+									<br> мной"</a>
+								<span>4900 руб.</span>
 							</div>
 						</div>
 						<!-- product-item -->
 					</div>
 
-					<div class="pagination">
-						<ul>
+					<div class="pagination flex-cont">
+						<div class="pagination-nav">
+							<a href="#">назад</a>
+						</div>
+						<ul class="pagination-list">
 							<li>
-								<a href="#">назад</a>
-							</li>
-							<li>
-								<a class="active" href="#">1</a>
+								<a class="active">1</a>
 							</li>
 							<li>
 								<a href="#">2</a>
@@ -297,10 +317,10 @@
 							<li>
 								<a href="#">3</a>
 							</li>
-							<li>
-								<a href="#">вперед</a>
-							</li>
 						</ul>
+						<div class="pagination-nav">
+							<a href="#">вперед</a>
+						</div>
 					</div>
 					<!-- pagination -->
 				</div>
@@ -310,6 +330,7 @@
 		</div>
 		<!-- end-catalog-main -->
 	</main>
+
 
 	<footer class="footer-wrap">
 		<div class="container footer-cont flex-cont">
@@ -325,7 +346,7 @@
 			</div>
 
 			<div class="footer-inner">
-				<ul class="footer-info">
+				<ul class="footer-info flex-cont">
 					<li>
 						<a href="#">доставка</a>
 					</li>
@@ -337,35 +358,37 @@
 					</li>
 				</ul>
 
-				<ul class="footer-social">
+				<ul class="footer-social flex-cont">
 					<li>
-						<a href="#">facebook</a>
+						<a class="facebook-ico" href="#"></a>
 					</li>
 					<li>
-						<a href="#">inst</a>
+						<a class="inst-ico" href="#"></a>
 					</li>
 					<li>
-						<a href="#">twitter</a>
+						<a class="twitter-ico" href="#"></a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="footer-inner">
-				<ul class="userbox-footer">
+				<ul class="userbox-footer flex-cont">
 					<li>
-						<a href="#">войти</a>
+						<a class="login-footer" href="#">войти</a>
 					</li>
 					<li>
-						<a href="#">сравнить</a>
+						<a class="compare-footer" href="#">сравнить</a>
 					</li>
 					<li>
-						<a href="#">корзина</a>
+						<a class="basket-footer" href="#">корзина</a>
 					</li>
 				</ul>
 				<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-				<a href="https://htmlacademy.ru/">
-					<img src="img/logo-academy-2.png" width="27" height="24" alt="HTML Academy">
-				</a>
+				<p class="footer-link-academy">
+					<a class="html-logo" href="https://htmlacademy.ru/">
+						<!-- <img src="img/logo-academy-2.png" width="24" height="24" alt="HTML Academy"> -->
+					</a>
+				</p>
 			</div>
 
 		</div>
