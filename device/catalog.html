@@ -15,15 +15,17 @@
 	<!-- header -->
 	<header class="container header header-catalog">
 		<div class="logo">
-			<img src="img/logo.png" width="164" height="36" alt="Device">
+			<a href="index.html">
+				<img src="img/logo.png" width="164" height="36" alt="Device">
+			</a>
 		</div>
 
 		<div class="header-info flex-cont">
 			<div class="search">
 				<form action="#" method="get">
-					<label class="search-area">
-						<input type="search" placeholder="Поиск по сайту">
+					<label for="search" class="search-area">
 					</label>
+					<input class="search-item" type="search" id="search" placeholder="Поиск по сайту">
 					<button class="search-button" type="submit">Найти</button>
 				</form>
 			</div>
@@ -31,13 +33,14 @@
 			<div class="userbox-header">
 				<ul class="userbox-lists">
 					<li>
-						<a class="log-in" href="#">Войти</a>
+						<a class="log-in log-in-padding">Валентин Петухов</a>
+						<a class="log-out" href="#">Выйти</a>
 					</li>
 					<li>
-						<a class="compare" href="#">Сравнить</a>
+						<a class="compare user-item" href="#">Сравнить</a>
 					</li>
 					<li>
-						<a class="basket" href="#">Корзина</a>
+						<a class="basket user-item" href="#">Корзина</a>
 					</li>
 				</ul>
 			</div>
@@ -116,12 +119,12 @@
 			<div class="container no-padding">
 				<div class="filter flex-cont catalog-padding">
 					<div class="filter-item">
-						<span>Фильтр:</span>
+						<span class="filter-title">Фильтр:</span>
 					</div>
 					<div class="sorting flex-cont">
 						<ul>
 							<li>
-								Сортировка:
+								<span class="filter-title">Сортировка:</span>
 							</li>
 							<li class="sorting-list">
 								<a class="active">По цене</a>
@@ -194,7 +197,7 @@
 							</div>
 						</div>
 
-						<div class="sidebar-title">
+						<div class="sidebar-title sidebar-title-mrg">
 							<span>Bluetooth</span>
 						</div>
 
@@ -205,7 +208,7 @@
 							</div>
 							<div class="radio-item">
 								<input class="radio-btn" id="radio-side-2" type="radio" name="radio-side">
-								<label for="radio-side-2">Нету</label>
+								<label for="radio-side-2">Нет</label>
 							</div>
 						</div>
 						<button class="btn sidebar-btn" type="submit">показать</button>
@@ -262,7 +265,7 @@
 						<div class="product-item">
 							<div class="product-box-inner">
 								<div class="product-hover">
-									<a class="btn " href="#">В корзину</a>
+									<a class="btn" href="#">В корзину</a>
 									<a href="#">Добавить к сравнению</a>
 								</div>
 
@@ -307,7 +310,7 @@
 						<div class="pagination-nav">
 							<a href="#">назад</a>
 						</div>
-						<ul class="pagination-list">
+						<ul class="pagination-list flex-cont">
 							<li>
 								<a class="active">1</a>
 							</li>
@@ -374,20 +377,18 @@
 			<div class="footer-inner">
 				<ul class="userbox-footer flex-cont">
 					<li>
-						<a class="login-footer" href="#">войти</a>
+						<a class="user-item login-footer" href="#">войти</a>
 					</li>
 					<li>
-						<a class="compare-footer" href="#">сравнить</a>
+						<a class="user-item compare-footer" href="#">сравнить</a>
 					</li>
 					<li>
-						<a class="basket-footer" href="#">корзина</a>
+						<a class="user-item basket-footer" href="#">корзина</a>
 					</li>
 				</ul>
 				<p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
 				<p class="footer-link-academy">
-					<a class="html-logo" href="https://htmlacademy.ru/">
-						<!-- <img src="img/logo-academy-2.png" width="24" height="24" alt="HTML Academy"> -->
-					</a>
+					<a class="html-logo" href="https://htmlacademy.ru/"></a>
 				</p>
 			</div>
 
