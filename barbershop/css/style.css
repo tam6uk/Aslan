@@ -256,6 +256,7 @@ html {
 	background: #000000;
 	line-height: 44px;
 	height: 44px;
+	font-weight:700;
 	color: white;
 	text-transform: uppercase;
 	outline: none;
