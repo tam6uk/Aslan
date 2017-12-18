@@ -424,23 +424,27 @@
 
 	<!-- pop-up -->
 	<div class="popup-message">
-		<button type="button">Закрыть</button>
+		<button class="popup-close-btn" type="button"></button>
 		<form action="#" method="get">
 			<div class="form-box flex-cont">
 				<div class="input-box">
-					<label for="name-area">Ваше имя:</label>
+					<label class="popular-txt" for="name-area">Ваше имя:</label>
 					<input type="text" id="name-area" name="uname" placeholder="Представьтесь, пожалуйста" required>
 				</div>
 				<div class="input-box">
-					<label for="email-area">Ваше e-mail:</label>
+					<label class="popular-txt" for="email-area">Ваше e-mail:</label>
 					<input type="text" id="email-area" name="email" placeholder="Для отправки ответа" required>
 				</div>
 			</div>
-			<label for="text-area">Текст письма:</label>
+			<label class="popular-txt" for="text-area">Текст письма:</label>
 			<textarea id="text-area" placeholder="В свободной форме"></textarea>
 
-			<button class="btn" type="submit">Отправить</button>
+			<button class="btn popup-btn" type="submit">Отправить</button>
 		</form>
+	</div>
+
+	<div class="popup-map">
+		<button class="popup-close-btn" type="button"></button>
 	</div>
 	<!-- end-pop-up -->
 
