@@ -77,7 +77,7 @@ html {
 .page-title {
 	font-size: 30px;
 	color: black;
-	margin-top: 49px;
+	margin-top: 50px;
 	text-transform: uppercase;
 }
 
@@ -118,24 +118,26 @@ html {
 }
 
 .main-menu {
-	min-width: 516px;
-	margin-left: 4px;
+	min-width: 545px;
+	margin-left: 10px;
 }
 
 .main-menu-inner {
-	margin-left: 0;
-	margin-right: 134px;
+	 margin-right: auto;
+	 margin-left: 0;
+}
+
+.header-inner{
+	display: flex;
 }
 
 .cont-logo {
-	width: 368px;
-	height: 204px;
-	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .logo-inner {
-	padding-top: 22px;
-	padding-left: 21px;
+	padding: 22px 19px 0px 21px;
 }
 
 .nav-list li {
@@ -148,11 +150,11 @@ html {
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 26px 20px;
+	padding: 25px 20px;
 	position: relative;
 }
 
-.nav-list a:active:after {
+.nav-list a:active:after, .nav-list .active:after {
 	position: absolute;
 	content: "";
 	bottom: 0;
@@ -167,11 +169,11 @@ html {
 }
 
 .log-in-inner {
-	padding-right: 5px;
+	padding-right: 10px;
 }
 
 .log-in a {
-	padding: 26px 16px 24px 38px;
+	padding: 24px 10px 24px 38px;
 }
 
 .nav-list a:hover, .log-in a:hover {
@@ -214,12 +216,11 @@ html {
 
 .advantage {
 	width: 936px;
-	margin: 21px auto 77px;
+	margin: 21px auto 78px;
 }
 
 .advantage-box {
-	width: 284px;
-	margin-right: 12px;
+	width: 294px;
 	text-align: center;
 	position: relative;
 	text-transform: uppercase;
@@ -232,7 +233,7 @@ html {
 	height: 20px;
 	background-color: #f7f4f1;
 	transform: rotate(45deg);
-	left: 130px;
+	left: 136px;
 	top: 53px;
 }
 
@@ -288,13 +289,20 @@ h3 {
 
 .infoblock {
 	background: url(../img/bg.png) repeat;
-	padding: 46px 75px 48px;
+	padding: 47px 68px 48px;
 	margin-bottom: 38px;
+	position: relative;
+}
+
+.infoblock .infoblock-item:first-child{
+	padding-left: 13px;
 	position: relative;
 }
 
 .infoblock-bottom {
 	margin-bottom: 68px;
+	padding-top: 44px;
+	padding-bottom: 50px;
 }
 
 .infoblock-title {
@@ -306,26 +314,26 @@ h3 {
 	letter-spacing: 0.26px;
 }
 
-.infoblock:after {
-	position: absolute;
-	content: "";
-	width: 12px;
-	height: 248px;
-	background: url(../img/grad.png) no-repeat;
-	left: 458px;
-	top: 90px;
+.infoblock-item {
+	width: 355px;
 }
 
 .infoblock .infoblock-item:last-child {
 	width: 311px;
 }
 
-.infoblock-item {
-	width: 353px;
+.infoblock .infoblock-itemf:first-child:after {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 248px;
+	background: url(../img/grad.png) no-repeat;
+	right: -55px;
+	top: 39px;
 }
 
 .gallery-buttons {
-	margin-top: 37px;
+	margin-top: 36px;
 }
 
 .gallery-buttons button:first-child {
@@ -352,7 +360,7 @@ h3 {
 }
 
 .infoblock-item p {
-	margin-bottom: 21px;
+	margin-bottom: 22px;
 }
 
 .infoblock-item a {
@@ -369,7 +377,7 @@ h3 {
 }
 
 .news-item {
-	margin-bottom: 22px;
+	margin-bottom: 21px;
 }
 
 .news-item-bottom {
@@ -377,7 +385,7 @@ h3 {
 }
 
 .form-item label {
-	padding-left: 18px;
+	padding-left: 17px;
 }
 
 .form-item input[type=text], input[type=tel] {
@@ -399,7 +407,7 @@ h3 {
 }
 
 .input-box {
-	margin-bottom: 10px;
+	margin-bottom: 11px;
 	width: 300px;
 }
 
@@ -427,7 +435,7 @@ h3 {
 }
 
 .product {
-	margin-bottom: 35px;
+	margin-bottom: 36px;
 }
 
 .product-item .slider-main, .slider-min {
@@ -476,12 +484,13 @@ h3 {
 
 .product-articul {
 	margin-bottom: 29px;
-	padding: 0 10px;
+	padding: 0 16px 0px 10px;
 }
 
 .articul-info {
 	padding-left: 10px;
 	letter-spacing: -1px;
+	margin-bottom: 36px;
 }
 
 .product-articul span {
@@ -497,6 +506,9 @@ h3 {
 .price-box {
 	width: 460px;
 }
+.price-box-table{
+	border-spacing: 0ch;
+}
 
 .breadcrumbs-price {
 	margin: 20px 0px 43px 0px;
@@ -510,6 +522,11 @@ h3 {
 
 .price-box table tr td:last-child {
 	text-align: center;
+	padding-left: 21px;
+}
+
+.list-price-page li{
+	margin-bottom: 19px;
 }
 
 .price-box table td {
@@ -532,7 +549,7 @@ h3 {
 }
 
 .price-about {
-	margin: 42px 0px 76px;
+	margin: 42px 0px 77px;
 }
 
 .price-about-box {
@@ -553,7 +570,7 @@ h3 {
 }
 
 .product-element-list {
-	padding-left: 7px;
+	padding-left: 9px;
 }
 
 .price-left li, .product-element-list li {
@@ -561,18 +578,22 @@ h3 {
 	text-transform: uppercase;
 	position: relative;
 	padding-left: 21px;
-	margin-bottom: 19px;
 }
 
-.price-left li:before, .product-element-list li:before {
+.list-price-page li:before, .product-element-list li:before {
 	position: absolute;
 	content: "";
 	width: 7px;
 	height: 7px;
 	background-color: black;
 	transform: rotate(44deg);
-	left: 1px;
-	top: 5px;
+	left: 5px;
+	top: 8px;
+}
+
+.list-price-page li:before{
+	left: 2px;
+	top: 6px;
 }
 
 .price-title {
@@ -623,9 +644,9 @@ h3 {
 }
 
 .catalog-box .catalog-item {
-	width: 223px;
+	width: 220px;
 	text-align: left;
-	margin-bottom: 17px;
+	margin-bottom: 19px;
 	background: #F7F7F7;
 	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
@@ -661,8 +682,8 @@ h3 {
 .product-price {
 	font-size: 0;
 	vertical-align: top;
-	margin-top: 10px;
-	padding-left: 3px;
+	margin-top: 13px;
+	padding-left: 11px;
 }
 
 .product-price button {
@@ -679,7 +700,7 @@ h3 {
 }
 
 .pagination {
-	margin: 31px 0px 48px;
+	margin: 25px 0px 49px;
 }
 
 .pagination ul {
@@ -689,7 +710,7 @@ h3 {
 
 .pagination li {
 	display: inline-block;
-	margin-right: 8px;
+	margin-right: 7px;
 }
 
 .pagination li a {
@@ -717,12 +738,16 @@ h3 {
 .checkbox-block legend, .radio-block legend {
 	font-size: 24px;
 	text-transform: uppercase;
-	margin-bottom: 29px;
+	margin-bottom: 27px;
 }
 
 .checkbox-item {
 	margin-bottom: 17px;
 	padding-left: 44px;
+}
+
+.radio-block .checkbox-item:first-of-type{
+	margin-bottom: 16px;
 }
 
 .checkbox-item input, .pop-up input[type="checkbox"] {
@@ -761,7 +786,6 @@ h3 {
 .check-popup:after {
 	left: -32px;
 	top: -2px;
-	;
 }
 
 .checkbox-block label:before, .check-popup:before {
@@ -785,7 +809,7 @@ h3 {
 }
 
 .radio-block {
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 }
 
 .radio-block label:after {
@@ -801,6 +825,10 @@ h3 {
 	border-radius: 10em;
 }
 
+.radio-block .checkbox-item:first-of-type label:after{
+	top: 0px;
+}
+
 .radio-block label:before {
 	position: absolute;
 	z-index: 10;
@@ -814,6 +842,10 @@ h3 {
 	border-radius: 10em;
 }
 
+.radio-block .checkbox-item:first-of-type label:before{
+	top: 6px;
+}
+
 .radio-btn:checked+label:before {
 	display: block;
 }
@@ -822,7 +854,7 @@ h3 {
 
 .footer {
 	background: url(../img/bg-footer.png) repeat;
-	padding: 60px 0px 40px 0px;
+	padding: 59px 0px 40px 0px;
 	/* margin-top: 68px; */
 	color: white;
 }
@@ -834,7 +866,7 @@ h3 {
 .footer-item {
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.15px;
 	font-size: 14px;
 }
@@ -849,11 +881,11 @@ h3 {
 
 .footer-contacts {
 	width: 316px;
-	margin-right: 75px;
+	margin-right: 82px;
 }
 
 .footer-social {
-	width: 146px;
+	width: 144px;
 	margin-right: auto;
 	text-align: center;
 }
@@ -863,7 +895,7 @@ h3 {
 }
 
 .footer-social span, .footer-copyright p {
-	margin-bottom: 18px;
+	margin-bottom: 17px;
 }
 
 .footer-btn {
