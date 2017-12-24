@@ -55,14 +55,16 @@
 				<span>Круто</span>
 				<p>
 					забудьте, как Вы стриглись раньше.
-					<br>мы сделаем из Вас звезду футбола или кино!<br> во всяком случае внешне.
+					<br>мы сделаем из Вас звезду футбола или кино!
+					<br> во всяком случае внешне.
 				</p>
 			</div>
 			<div class="advantage-box">
 				<span>Дорого</span>
 				<p>
 					наши мастера - профессионалы своего дела и
-					<br> не могут стоить дорого. к тому же, разве цена<br> не дает определенный статус?
+					<br> не могут стоить дорого. к тому же, разве цена
+					<br> не дает определенный статус?
 				</p>
 			</div>
 		</div>
@@ -120,8 +122,8 @@
 					<br> пн - пт: с 10:00 до 22:00
 					<br> сб - вс: с 10:00 до 19:00
 				</p>
-				<a class="button-cont button-cont-small" href="#">Как проехать</a>
-				<a class="button-cont button-cont-small" href="#">Обратная связь</a>
+				<a class="button-cont button-cont-small" id="map-btn" href="#">Как проехать</a>
+				<a class="button-cont button-cont-small mess" id="message" href="#">Обратная связь</a>
 			</div>
 
 			<div class="infoblock-item">
@@ -204,32 +206,76 @@
 		</div>
 	</footer>
 
-	<!-- pop up -->
-	<div class="pop-up">
-		<form action="#" method="get">
-			<h3>Личный кабинет</h3>
+	<!-- map -->
+	
+	<div class="maps-inner">
+	<button type="button" class="close-map"></button>
+		
+		<div class="maps" id="maps">
+			
 
-			<span class="pop-up-txt">введите пожалуйста свой логин и пароль</span>
-			<label class="login" for="login">
-				<input type="text" id="login" placeholder="логин">
-			</label>
-			<label class="password" for="password">
-				<input type="password" id="password" placeholder="пароль">
-			</label>
 
-			<div class="pop-up-bottom flex-cont">
-				<input type="checkbox" id="check-popup" checked>
-				<label class="check-popup" for="check-popup">запомните меня</label>
-				<a class="forgot-pass" href="#">я забыл пароль!</a>
+			<script>
+				function initMap() {
+					var element = document.getElementById('maps');
+					var options = {
+						zoom: 17,
+						center: { lat: 59.9387942, lng: 30.3208946 }
+					};
+
+					var myMap = new google.maps.Map(element, options);
+
+					var marker = new google.maps.Marker({
+						position: { lat: 59.9387942, lng: 30.3208946 },
+						map: myMap,
+						// icon: 'img/html-logo.png'
+
+					});
+
+					// var InfoWindow = new google.maps.InfoWindow({
+					// 	content: '<span>Строителей 15</span>'
+					// });
+
+
+					// marker.addListener('click', function(){
+					// 	InfoWindow.open(myMap, marker);
+					// });
+				}
+			</script>
+
+		</div>
+		</div>
+
+		<!-- pop up -->
+		<div class="popup-bg">
+			<div class="pop-up">
+				<form action="#" method="get">
+					<h3>Личный кабинет</h3>
+					<button type="button" class="close-btn"></button>
+					<span class="pop-up-txt">введите пожалуйста свой логин и пароль</span>
+					<label class="login" for="login">
+						<input type="text" id="login" placeholder="логин">
+					</label>
+					<label class="password" for="password">
+						<input type="password" id="password" placeholder="пароль">
+					</label>
+
+					<div class="pop-up-bottom flex-cont">
+						<input type="checkbox" id="check-popup" checked>
+						<label class="check-popup" for="check-popup">запомните меня</label>
+						<a class="forgot-pass" href="#">я забыл пароль!</a>
+					</div>
+
+					<button class="pop-up-btn" type="submit">войти</button>
+
+				</form>
 			</div>
+		</div>
 
-			<button class="pop-up-btn" type="submit">войти</button>
-
-		</form>
-	</div>
-
-	<!-- JS_BLOCK -->
-	<script src="js/common.js"></script>
+		<!-- JS_BLOCK -->
+		<script src="js/common.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIw2iJVkSl6hszdFeDtNhlvJ8zKM_kYiY&callback=initMap">
+		</script>
 
 </body>
 

@@ -71,7 +71,7 @@ body {
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 3.15px;
-	transition: 0.5s;
+	/* transition: 0.5s; */
 }
 
 .btn:active {
@@ -969,11 +969,29 @@ h1, h2 {
 
 /* pop up */
 
+.popup-bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 1, 1, 0.8);
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+}
+
+.popup-show{
+	display: block;
+}
+
 .popup-message {
 	width: 960px;
-	/* display: none; */
 	position: relative;
 	padding: 98px 100px;
+	background: white;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
@@ -1041,7 +1059,8 @@ h1, h2 {
 	height: 559px;
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 	position: relative;
-	background: url(../img/map-big.jpg) no-repeat;
+	display: none;
+	/* background: url(../img/map-big.jpg) no-repeat; */
 }
 
 /* catalog */
@@ -1450,6 +1469,15 @@ h1, h2 {
 	margin-bottom: 24px;
 }
 
+.product-img{
+	overflow: hidden;
+}
+
+.product-img img{
+	width: 100%;
+	height: auto;
+}
+
 .product-info a {
 	font-family: "Gilroy-ExtraBold";
 	color: black;
@@ -1461,7 +1489,7 @@ h1, h2 {
 
 .product-info span {
 	font-size: 16px;
-	ine-height:22px;
+	line-height:22px;
 	letter-spacing: 0.25px;
 }
 
@@ -1508,15 +1536,10 @@ h1, h2 {
 
 .pagination {
 	background: #EBEBEB;
-	/* padding: 15px 0px; */
 	margin-top: -9px;
 	margin-bottom: 74px;
 }
 
-.pagination-nav {
-	/* padding-top: 5px; */
-	/* width: 69px; */
-}
 
 .pagination-nav a, .pagination-list a {
 	color: #000000;
@@ -1550,12 +1573,15 @@ h1, h2 {
 
 .pagination-list {
 	min-width: 100px;
-	padding-left: 12px;
-	padding-top: 20px;
+	display: flex;
+	align-items: center;
 }
 
 .pagination-list a {
 	color: #AAAAAA;
+	display: inline-block;
+	width: 40px;
+	text-align: center;
 }
 
 .pagination-list a:hover {
@@ -1568,7 +1594,6 @@ h1, h2 {
 
 .pagination-list .active {
 	color: black;
-	margin-right: 5px;
 }
 
 .pagination li {
