@@ -474,6 +474,7 @@ body {
 .slide-inner {
 	width: 561px;
 	position: relative;
+	overflow: hidden;
 }
 
 .slider-num {
@@ -559,6 +560,12 @@ h1, h2 {
 	background-color: #F7E296;
 	height: 161px;
 	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.popular-img img{
+	width: 100%;
+	height: auto;
 }
 
 .popular-img:hover {
@@ -736,6 +743,12 @@ h1, h2 {
 
 .partners-box {
 	width: 260px;
+	overflow: hidden;
+}
+
+.partners-box img{
+	width: 100%;
+	height: auto;
 }
 
 /* company */
@@ -989,9 +1002,9 @@ h1, h2 {
 	position: relative;
 	padding: 98px 100px;
 	background: white;
-	top: 5%;
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%,-50%);
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
@@ -1042,7 +1055,7 @@ h1, h2 {
 	cursor: pointer;
 }
 
-.popup-close-btn {
+.popup-close-btn, .map-close-btn {
 	width: 55px;
 	height: 55px;
 	background: url(../img/modal-close.png) no-repeat;
@@ -1054,13 +1067,36 @@ h1, h2 {
 	top: 20px;
 }
 
-.popup-map {
+.map-close-btn{
+	position: fixed; 
+	right: -70px;
+	top: -10px;
+}
+
+#map{
 	width: 960px;
 	height: 559px;
+}
+
+#map-btn{
+	cursor: pointer;
+}
+
+.popup-map {
+	position: fixed;
+	z-index: 9999;
+	left: -120%;
+	opacity: 0;
+
+	
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-	position: relative;
-	display: none;
-	/* background: url(../img/map-big.jpg) no-repeat; */
+}
+
+.map-show{
+	opacity: 1;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 /* catalog */

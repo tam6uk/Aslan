@@ -345,40 +345,7 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
 						<br> проверить работоспособность покупки. Всякое бывает.</p>
-					<div class="map" id="map">
-						<a href="#">
-							<script>
-								function initMap() {
-									var element = document.getElementById('map');
-									var options = {
-										zoom: 17,
-										center: { lat: 55.687034, lng: 37.5274293 }
-									};
-
-
-
-									var myMap = new google.maps.Map(element, options);
-
-									var marker = new google.maps.Marker({
-										position: { lat: 55.687034, lng: 37.5274293 },
-										map: myMap,
-										icon: 'img/html-logo.png'
-
-									});
-
-									var InfoWindow = new google.maps.InfoWindow({
-										content: '<span>Строителей 15</span>'
-									});
-
-
-									marker.addListener('click', function () {
-										InfoWindow.open(myMap, marker);
-									});
-
-								}
-							</script>
-						</a>
-					</div>
+					<div class="map" id="map-btn"></div>
 					<a class="btn about-btn" id="message" href="#">Напишите нам</a>
 				</div>
 			</div>
@@ -475,39 +442,37 @@
 	</div>
 
 	<div class="popup-map">
-		<button class="popup-close-btn" type="button"></button>
-		<!-- <div class="map" id="map2">
-			<a href="#">
-				<script>
-					function initMap() {
-						var element = document.getElementById('map2');
-						var options = {
-							zoom: 17,
-							center: { lat: 55.687034, lng: 37.5274293 }
-						};
+		<button class="map-close-btn" type="button"></button>
+		<div id="map">
+			<script>
+				function initMap() {
+					var element = document.getElementById('map');
+					var options = {
+						zoom: 17,
+						center: { lat: 59.9387942, lng: 30.3208946 }
+					};
 
-						var myMap = new google.maps.Map(element, options);
+					var myMap = new google.maps.Map(element, options);
 
-						var marker = new google.maps.Marker({
-							position: { lat: 55.687034, lng: 37.5274293 },
-							map: myMap,
-							// icon: 'img/html-logo.png'
+					var marker = new google.maps.Marker({
+						position: { lat: 59.9387942, lng: 30.3208946 },
+						map: myMap,
+						// icon: 'img/html-logo.png'
 
-						});
+					});
 
-						// var InfoWindow = new google.maps.InfoWindow({
-						// 	content: '<span>Строителей 15</span>'
-						// });
+					// var InfoWindow = new google.maps.InfoWindow({
+					// 	content: '<span>Строителей 15</span>'
+					// });
 
 
-						// marker.addListener('click', function () {
-						// 	InfoWindow.open(myMap, marker);
-						// });
+					// marker.addListener('click', function(){
+					// 	InfoWindow.open(myMap, marker);
+					// });
+				}
+			</script>
 
-					}
-				</script>
-			</a>
-		</div> -->
+		</div>
 	</div>
 	<!-- end-pop-up -->
 
@@ -516,7 +481,7 @@
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIw2iJVkSl6hszdFeDtNhlvJ8zKM_kYiY&callback=initMap">
 	</script>
-	
+
 
 </body>
 

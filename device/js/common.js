@@ -5,8 +5,8 @@
     var close = document.querySelector(".popup-close-btn");
 	
 	var mapshow = document.querySelector("#map-btn");
-    var closemap = document.querySelector(".close-map");
-    var map = document.querySelector(".maps-inner");
+    var closemap = document.querySelector(".map-close-btn");
+    var map = document.querySelector(".popup-map");
     
     
 
@@ -21,13 +21,14 @@
     });
 
     mapshow.addEventListener("click", function(event){
+        // alert('1');
         event.preventDefault();
-        map.classList.add("popup-show");
+        map.classList.add("map-show");
     });
 
     closemap.addEventListener("click", function(event){
         event.preventDefault();
-        map.classList.remove("popup-show");
+        map.classList.remove("map-show");
     });
 
     

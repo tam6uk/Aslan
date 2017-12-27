@@ -21,12 +21,12 @@
 
     mapshow.addEventListener("click", function(event){
         event.preventDefault();
-        map.classList.add("popup-show");
+        map.classList.add("map-show");
     });
 
     closemap.addEventListener("click", function(event){
         event.preventDefault();
-        map.classList.remove("popup-show");
+        map.classList.remove("map-show");
     });
 
     
