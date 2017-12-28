@@ -18,3 +18,18 @@
 	font-style: normal; 
 }
 
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.eot");
+  src: local("☺"), url("../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.ttf") format("truetype"), url("../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal; 
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light/Gilroy-Light.eot");
+    src: local("☺"), url("../fonts/Gilroy-Light/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light/Gilroy-Light.ttf") format("truetype"), url("../fonts/Gilroy-Light/Gilroy-Light.svg") format("svg");
+    font-weight: 300;
+	font-style: normal; 
+} */
