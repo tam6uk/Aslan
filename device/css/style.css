@@ -395,6 +395,7 @@ body {
 
 .slide-1 .slide-img {
 	padding-left: 90px;
+	overflow: hidden;
 }
 
 .slides {
@@ -474,7 +475,6 @@ body {
 .slide-inner {
 	width: 561px;
 	position: relative;
-	overflow: hidden;
 }
 
 .slider-num {
